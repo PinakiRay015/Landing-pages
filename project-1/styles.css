@@ -1,138 +1,183 @@
-body{
-    font-family: "Inter", sans-serif;
-    margin: 0px;
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
-.container{
-    width: 100%;
-    position: relative;
-    height: 100vh;
+.container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
 }
 
-.navbar{
-    max-width: 1320px;
-    height: 88px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar {
+  width: 1320px;
+  height: 88px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0px;
+  position: fixed;
+  z-index: 9;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
-.navBox1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 547px;
+.navBox1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 547px;
 }
 
-.navBox1 input{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 55%;
+.navBox1 input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 55%;
 }
 
-.navBox2{
-    width: 593.5px;
-    height: 44px;
+.navBox2 {
+  width: 593.5px;
+  height: 44px;
 }
 
-.navBox2 ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
+.navBox2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
 }
 
-.navBox2 li{
-    list-style: none;
-    gap: 5rem;
-    font-size: 13.83px;
-    color: #05073C;
-    font-weight: 400px;
+.navBox2 li {
+  list-style: none;
+  gap: 5rem;
+  font-size: 13.83px;
+  color: #05073c;
+  font-weight: 400px;
 }
 
-.navBox2 button{
-    height: 44px;
-    font-size: 14.3px;
-    width: 83.81px;
-    border-radius: 200px;
-    background: #EB662B;
-    border: none;
-    color: white;
+.navBox2 button {
+  height: 44px;
+  font-size: 14.3px;
+  width: 83.81px;
+  border-radius: 200px;
+  background: #eb662b;
+  border: none;
+  color: white;
 }
 
 /* hero section styling */
-.hero{
-    height: 40rem;
-    position: absolute;
-    width: 100vw;
-    top: 0px;
-    z-index: -1;
+.hero {
+  height: 40rem;
+  position: inherit;
+  width: 100vw;
+  top: 0px;
 }
 
-.hero img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.hero .main{
-    width: 1320px;
-    margin: 0px auto;
+.hero .main {
+  width: 1320px;
+  margin: 0px auto;
 }
 
-.hero .content{
-    width: 539.11px;
-    position: absolute;
-    top: 30%;
-    border: none;
+.hero .content {
+  width: 539.11px;
+  position: absolute;
+  top: 30%;
+  border: none;
 }
 
-.hero #heading{
-    font-size: 59.53px;
-    font-weight: 600px;
-    margin: 0px;
+.hero #heading {
+  font-size: 59.53px;
+  font-weight: 600px;
+  margin: 0px;
 }
 
-.hero #heading span{
-    color: #EB662B;
+.hero #heading span {
+  color: #eb662b;
 }
 
-.hero #subheading{
-    color: #05073C;
-    font-size: 14.65px;
-    font-weight: 400px;
-    line-height: 28.13px;
+.hero #subheading {
+  color: #05073c;
+  font-size: 14.65px;
+  font-weight: 400px;
+  line-height: 28.13px;
 }
 
-.hero .booking{
-    background-color: white;
-    width: 739.98px;
-    height: 80px;
-    border-radius: 200px;
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 1rem;
+.hero .booking {
+  background-color: white;
+  width: 739.98px;
+  height: 80px;
+  border-radius: 200px;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
 }
 
-.hero .booking .filter{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.hero .booking .filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.hero .booking .circle{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #717171;
+.hero .booking .circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #717171;
 }
 
-.hero .booking .mbox p{
-    margin: 0px;
-    line-height: 1.2rem;
+.hero .booking .mbox p {
+  margin: 0px;
+  line-height: 1.2rem;
 }
 
+/* advantages section  */
+.container .advantages {
+  width: 1320px;
+  height: 296.38px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 10;
+  margin-top: 8rem;
+}
+
+.advantages h2 {
+  font-size: 29.3px;
+  font-weight: 700;
+}
+.advantages .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages .box {
+  width: 255.53px;
+  height: 200px;
+}
+
+.advantages .box h3 {
+  font-size: 17.72px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 0px;
+  margin-top: 1.3rem;
+}
+
+.advantages .box p {
+  color: #05073c;
+  font-weight: 400;
+  font-size: 14.88px;
+  line-height: 28.13px;
+  margin: 0px;
+}
