@@ -5,12 +5,13 @@ body{
 
 .container{
     width: 100%;
+    position: relative;
+    height: 100vh;
 }
 
 .navbar{
     max-width: 1320px;
     height: 88px;
-    background-color: crimson;
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -60,3 +61,41 @@ body{
     border: none;
     color: white;
 }
+
+/* hero section styling */
+.hero{
+    height: 40rem;
+    position: absolute;
+    width: 100vw;
+    top: 0px;
+    z-index: -1;
+}
+
+.hero img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .main{
+    width: 1320px;
+    margin: 0px auto;
+}
+
+.hero .content{
+    width: 539.11px;
+    position: absolute;
+    top: 40%;
+    border: none;
+}
+
+.hero #heading{
+    font-size: 59.53px;
+    font-weight: 600px;
+    margin: 0px;
+}
+
+.hero #heading span{
+    color: #EB662B;
+}
+
