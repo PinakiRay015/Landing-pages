@@ -1,0 +1,62 @@
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+}
+
+.navbar{
+    max-width: 1320px;
+    height: 88px;
+    background-color: crimson;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBox1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 547px;
+}
+
+.navBox1 input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 55%;
+}
+
+.navBox2{
+    width: 593.5px;
+    height: 44px;
+}
+
+.navBox2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.navBox2 li{
+    list-style: none;
+    gap: 5rem;
+    font-size: 13.83px;
+    color: #05073C;
+    font-weight: 400px;
+}
+
+.navBox2 button{
+    height: 44px;
+    font-size: 14.3px;
+    width: 83.81px;
+    border-radius: 200px;
+    background: #EB662B;
+    border: none;
+    color: white;
+}
