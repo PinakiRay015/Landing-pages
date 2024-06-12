@@ -4,6 +4,12 @@ body {
   overflow-x: hidden;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   position: relative;
@@ -11,17 +17,12 @@ body {
 }
 
 .navbar {
-  width: 1320px;
+  width: 85.9375vw;
   height: 88px;
   margin: 0px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 0px;
-  position: fixed;
-  z-index: 9;
-  left: 50%;
-  transform: translatex(-50%);
 }
 
 .navBox1 {
@@ -83,7 +84,7 @@ body {
 }
 
 .hero .main {
-  width: 1320px;
+  width: 85.9375vw;
   margin: 0px auto;
 }
 
@@ -143,7 +144,7 @@ body {
 
 /* advantages section  */
 .container .advantages {
-  width: 1320px;
+  width: 85.9375vw;
   height: 296.38px;
   margin: 0px auto;
   position: relative;
@@ -180,4 +181,51 @@ body {
   font-size: 14.88px;
   line-height: 28.13px;
   margin: 0px;
+}
+
+/* destinations section */
+.destination{
+  width: 85.9375vw;
+  margin: 0px auto;
+}
+
+.destination header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.destination h2{
+  font-weight: 700;
+  font-size: 29.88px;
+  line-height: 45px;
+}
+
+.destination .destinationImg{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  width: 85.9375vw;
+  }
+  
+  .destination .tourImg{
+    width: 300px;
+    height: 180px;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.destination img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.destination .tourImg p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
