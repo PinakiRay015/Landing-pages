@@ -89,7 +89,7 @@ body {
 }
 
 .hero .content {
-  width: 539.11px;
+  width: 565.11px;
   position: absolute;
   top: 30%;
   border: none;
@@ -155,6 +155,7 @@ body {
 .advantages h2 {
   font-size: 29.3px;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 .advantages .feature {
   display: flex;
@@ -170,9 +171,9 @@ body {
 .advantages .box h3 {
   font-size: 17.72px;
   font-weight: 500;
-  line-height: 27px;
   margin: 0px;
-  margin-top: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .advantages .box p {
