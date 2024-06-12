@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -185,48 +185,114 @@ body {
 }
 
 /* destinations section */
-.destination{
+.destination {
   width: 85.9375vw;
   margin: 0px auto;
 }
 
-.destination header{
+.destination header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
-.destination h2{
+.destination h2 {
   font-weight: 700;
   font-size: 29.88px;
   line-height: 45px;
 }
 
-.destination .destinationImg{
+.destination .destinationImg {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   width: 85.9375vw;
-  }
-  
-  .destination .tourImg{
-    width: 300px;
-    height: 180px;
-    border-radius: 12px;
-    position: relative;
-    cursor: pointer;
 }
 
-.destination img{
+.destination .tourImg {
+  width: 300px;
+  height: 180px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.destination img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
-.destination .tourImg p{
+.destination .tourImg p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+/* popular things section  */
+.popular {
+  height: 541.5px;
+  background: #eb652b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.popular .box {
+  width: 85.9375vw;
+  height: 316.5px;
+}
+
+.popular header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.popular h2 {
+  font-weight: 700;
+  font-size: 29.88px;
+  line-height: 45px;
+}
+.popular .popularThings {
+  display: flex;
+  justify-content: space-between;
+}
+.popular .popularThings .miniBox {
+  height: 211.5px;
+  width: 190px;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.popular article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  text-align: center;
+}
+
+.popular article p {
+  font-family: Inter;
+  font-size: 17.58px;
+  font-weight: 500;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+
+.popular article span {
+  width: 75.09px;
+  height: 19.5px;
+  top: 162px;
+  left: 57.45px;
+  gap: 0px;
+  opacity: 0px;
 }
