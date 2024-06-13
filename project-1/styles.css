@@ -296,3 +296,91 @@ body {
   gap: 0px;
   opacity: 0px;
 }
+
+/* featured trip section */
+.travel {
+  width: 85.9375vw;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
+.travel header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.travel header h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.travel header div{
+font-size: 14.3px;
+font-weight: 400;
+width: 220px;
+height: 60px;
+border-radius: 12px;
+border: 1px solid #E7E6E6;
+position: relative;
+}
+.travel header p{
+  position: absolute;
+  left: 21px;
+  top: 15.93px;
+}
+
+.travel .tripCard{
+  height: 412px;
+  width: 85.9375vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.travel .card{
+  width: 300px;
+height: 388.31px;
+gap: 0px;
+border-radius: 12px;
+border: 1px solid #E7E6E6;
+background-color: white;
+padding: 11px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.travel #location{
+font-size: 12.29px;
+font-weight: 400;
+line-height: 24.38px;
+color: #717171;
+margin-left: 42px;
+}
+
+.travel #about{
+font-size: 15.88px;
+font-weight: 500;
+line-height: 24px;
+color: #05073C;
+}
+
+.travel #rating{
+font-size: 12.49px;
+font-weight: 400;
+line-height: 24.38px;
+color: #05073C;
+text-align: center;
+}
+
+.travel #price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.travel #price span{
+font-size: 14.5px;
+font-weight: 500;
+}
+
