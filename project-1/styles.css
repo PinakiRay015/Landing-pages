@@ -437,40 +437,96 @@ body {
   bottom: 0px;
 }
 
-.achievements  #mbox {
+.achievements #mbox {
   width: 280px;
   height: 240px;
   border-radius: 12px;
   background-color: white;
   display: grid;
   place-items: center;
-  padding: 2rem  0rem;
+  padding: 2rem 0rem;
 }
 
-.achievements #mbox h3{
+.achievements #mbox h3 {
   font-size: 38.91px;
   font-weight: 700;
   line-height: 56px;
   text-align: center;
-  color: #EB662B;
-  }
+  color: #eb662b;
+}
 
-  .achievements #mbox p{
-    font-size: 14.77px;
-    font-weight: 400;
-    line-height: 28.13px;
-    text-align: center;
-    color: #05073C;
-    }
+.achievements #mbox p {
+  font-size: 14.77px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: center;
+  color: #05073c;
+}
 
-.achievements #box2{
+.achievements #box2 {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.achievements aside{
+.achievements aside {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+/* customer review section */
+.review {
+  display: grid;
+  place-items: center;
+  height: 760.39px;
+  width: 850px;
+  margin: 0px auto;
+}
+
+.review .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review p{
+  text-align: center;
+  margin: 2.5rem 0rem;
+}
+
+.review .userImg{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.review .userImg img{
+  cursor: pointer;
+}
+
+.review .userImg img:active{
+  border: 2px solid #EB662B;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.review #caption p{
+font-size: 15.38px;
+font-weight: 500;
+text-align: center;
+color: #05073C;
+margin: 0px;
+line-height: 22.4px;
+}
+
+.review #caption span{
+font-size: 14.41px;
+font-weight: 400;
+text-align: center;
+color: #05073C;
+line-height: 21px;
+}
+
