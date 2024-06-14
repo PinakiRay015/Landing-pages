@@ -530,3 +530,116 @@ color: #05073C;
 line-height: 21px;
 }
 
+/* travel article section  */
+.articles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+  height: 749.98px;
+}
+
+.articles .travelBlog{
+  width: 85.9375vw;
+  height: 529.98px;
+}
+
+.articles .blogData{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.articles header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articles .imgHolder{
+  position: relative;
+}
+
+.articles .imgHolder p{
+top: 20px;
+left: 20px;
+padding: 9px 14.8px;
+border-radius: 200px;
+background-color: white;
+position: absolute;
+}
+
+.articles main{
+  width: 409.98px;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.articles .author{
+  display: flex;
+  gap: 1rem;
+}
+
+.articles .author p{
+font-size: 13.89px;
+font-weight: 400;
+line-height: 18.2px;
+color: #05073C;
+}
+
+.articles .title p{
+font-size: 17.3px;
+font-weight: 500;
+line-height: 27px;
+}
+
+/* special offers */
+.partners{
+  width: 85.9375vw;
+  margin: 3rem auto;
+}
+
+.partners p{
+  text-align: center;
+font-size: 14.53px;
+font-weight: 400;
+line-height: 28.13px;
+}
+
+.partners .brands{
+  width: 100%;
+  height: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 4rem;
+}
+
+.partners img{
+  height: 30px;
+}
+
+.suscribeSec{
+  width: 100vh;
+  height: fit-content;
+  position: relative;
+}
+
+.suscribeSec img{
+  width: 100vw;
+  height: 100%;
+  object-fit: fit;
+}
+
+.suscribeSec p{
+font-size: 39.38px;
+font-weight: 700;
+line-height: 60px;
+position: absolute;
+top: 5rem;
+left: 10rem;
+}
