@@ -23,6 +23,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+}
+
+.navbar #check{
+  display: none;
 }
 
 .navBox1 {
@@ -32,16 +37,23 @@ body {
   width: 547px;
 }
 
+.navBox1 #menuBar{
+  width: 2rem;
+  display: none;
+}
+
 .navBox1 input {
   background-color: transparent;
   border: none;
   outline: none;
   width: 55%;
+  display: block;
 }
 
 .navBox2 {
   width: 593.5px;
   height: 44px;
+  display: block;
 }
 
 .navBox2 ul {
@@ -59,7 +71,7 @@ body {
   font-weight: 400px;
 }
 
-.navBox2 button {
+.navbar .navBtn1 {
   height: 44px;
   font-size: 14.3px;
   width: 83.81px;
@@ -67,6 +79,18 @@ body {
   background: #eb662b;
   border: none;
   color: white;
+  
+}
+
+.navbar .navBtn2{
+  height: 44px;
+  font-size: 14.3px;
+  width: 83.81px;
+  border-radius: 200px;
+  background: #eb662b;
+  border: none;
+  color: white;
+  display: none;
 }
 
 /* hero section styling */
@@ -748,4 +772,66 @@ footer .footer3{
 footer .footer3 p{
 font-size: 14.53px;
 font-weight: 400;
+}
+
+/* responsive elements */
+
+.mobileNav{
+  width: 85.9375vw;
+  margin: 0px auto;
+  display: none;
+}
+
+
+
+@media (max-width : 1098px)
+{
+  .navbar{
+  }
+
+  
+   #navBox2{
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+  }
+
+
+  .mobileNav li{
+    color: white;
+    line-height: 4rem;
+    list-style-type: none;
+  }
+
+  .mobileNav ul{
+    margin-left: 1rem;
+  }
+
+  .mobileNav button{
+    display: none;
+  }
+
+  .navBox2{
+    display: none;
+  }
+
+  .navbar .navBtn2{
+    display: block;
+  }
+
+  .navBox1 #menuBar{
+    display: inline;
+  }
+
+  .mobileNav{
+    display: none;
+    position: absolute;
+    z-index: 8;
+    top: 5rem;
+  }
+
+  .navbar #check:checked~.mobileNav{
+    display: block;
+  }
+
 }
