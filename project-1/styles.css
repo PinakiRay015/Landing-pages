@@ -643,3 +643,109 @@ position: absolute;
 top: 5rem;
 left: 10rem;
 }
+
+/* footer section */
+.footer{
+  background-color: #05073C;
+  color: white;
+}
+
+footer{
+  width: 85.9375vw;
+  margin: 0px auto;
+}
+
+footer hr{
+  opacity: 15%;
+}
+
+footer .footer1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  height: 185.13px;
+}
+
+footer .footer p{
+font-size: 19.69px;
+font-weight: 500;
+}
+
+footer .footer1 span{
+font-size: 16.2px;
+font-weight: 500;
+}
+
+footer .footer2{
+  height: 471px;
+  display: flex;
+  height: 471px;
+  align-items: center;
+}
+
+footer .footer2 div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+
+}
+
+footer .footer2 p{
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+color: #FFFFFF;
+}
+
+footer .footer2 li{
+  list-style: none;
+font-size: 14.41px;
+font-weight: 400;
+line-height: 28.13px;
+color: #FFFFFF;
+}
+
+footer .mail{
+  width: 300px;
+height: 60px;
+padding: 20px 21px;
+border-radius: 12px;
+background-color: #FFFFFF;
+border: 1px solid #E7E6E6;
+position: relative;
+color: #757575;
+display: flex;
+align-items: center;
+}
+
+footer input{
+  width: 100%;
+  border: none;
+  outline: none;
+color: #757575;
+}
+
+footer button{
+  position: absolute;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  color: #05073C;
+  font-family: Inter;
+font-size: 14.53px;
+font-weight: 400;
+}
+
+footer .footer3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69.13px;
+}
+
+footer .footer3 p{
+font-size: 14.53px;
+font-weight: 400;
+}
