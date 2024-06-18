@@ -25,6 +25,10 @@ body {
   justify-content: space-between;
 }
 
+.navbar #check {
+  display: none;
+}
+
 .navBox1 {
   display: flex;
   align-items: center;
@@ -32,16 +36,23 @@ body {
   width: 547px;
 }
 
+.navBox1 #menuBar {
+  width: 2rem;
+  display: none;
+}
+
 .navBox1 input {
   background-color: transparent;
   border: none;
   outline: none;
   width: 55%;
+  display: block;
 }
 
 .navBox2 {
   width: 593.5px;
   height: 44px;
+  display: block;
 }
 
 .navBox2 ul {
@@ -59,7 +70,7 @@ body {
   font-weight: 400px;
 }
 
-.navBox2 button {
+.navbar .navBtn1 {
   height: 44px;
   font-size: 14.3px;
   width: 83.81px;
@@ -67,6 +78,17 @@ body {
   background: #eb662b;
   border: none;
   color: white;
+}
+
+.navbar .navBtn2 {
+  height: 44px;
+  font-size: 14.3px;
+  width: 83.81px;
+  border-radius: 200px;
+  background: #eb662b;
+  border: none;
+  color: white;
+  display: none;
 }
 
 /* hero section styling */
@@ -96,7 +118,7 @@ body {
 }
 
 .hero #heading {
-  font-size: 59.53px;
+  font-size: 3.721rem;
   font-weight: 600px;
   margin: 0px;
 }
@@ -210,8 +232,8 @@ body {
 }
 
 .destination .tourImg {
-  width: 300px;
-  height: 180px;
+  width: 18.75;
+  height: 11.25;
   border-radius: 12px;
   position: relative;
   cursor: pointer;
@@ -330,10 +352,12 @@ body {
 }
 
 .travel .tripCard {
-  height: 412px;
+  height: fit-content;
   width: 85.9375vw;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -480,22 +504,21 @@ body {
   display: grid;
   place-items: center;
   height: 760.39px;
-  width: 850px;
   margin: 0px auto;
 }
 
-.review .box{
+.review .box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.review p{
+.review p {
   text-align: center;
   margin: 2.5rem 0rem;
 }
 
-.review .userImg{
+.review .userImg {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -503,74 +526,74 @@ body {
   margin-top: 1rem;
 }
 
-.review .userImg img{
+.review .userImg img {
   cursor: pointer;
 }
 
-.review .userImg img:active{
-  border: 2px solid #EB662B;
+.review .userImg img:active {
+  border: 2px solid #eb662b;
   border-radius: 50%;
   padding: 0.2rem;
 }
 
-.review #caption p{
-font-size: 15.38px;
-font-weight: 500;
-text-align: center;
-color: #05073C;
-margin: 0px;
-line-height: 22.4px;
+.review #caption p {
+  font-size: 15.38px;
+  font-weight: 500;
+  text-align: center;
+  color: #05073c;
+  margin: 0px;
+  line-height: 22.4px;
 }
 
-.review #caption span{
-font-size: 14.41px;
-font-weight: 400;
-text-align: center;
-color: #05073C;
-line-height: 21px;
+.review #caption span {
+  font-size: 14.41px;
+  font-weight: 400;
+  text-align: center;
+  color: #05073c;
+  line-height: 21px;
 }
 
 /* travel article section  */
-.articles{
+.articles {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   height: 749.98px;
 }
 
-.articles .travelBlog{
+.articles .travelBlog {
   width: 85.9375vw;
   height: 529.98px;
 }
 
-.articles .blogData{
+.articles .blogData {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
 }
 
-.articles header{
+.articles header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.articles .imgHolder{
+.articles .imgHolder {
   position: relative;
 }
 
-.articles .imgHolder p{
-top: 20px;
-left: 20px;
-padding: 9px 14.8px;
-border-radius: 200px;
-background-color: white;
-position: absolute;
+.articles .imgHolder p {
+  top: 20px;
+  left: 20px;
+  padding: 9px 14.8px;
+  border-radius: 200px;
+  background-color: white;
+  position: absolute;
 }
 
-.articles main{
-  width: 409.98px;
+.articles main {
+  width: 96%;
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -578,88 +601,93 @@ position: absolute;
   margin-top: 3rem;
 }
 
-.articles .author{
+.articles img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.articles .author {
   display: flex;
   gap: 1rem;
 }
 
-.articles .author p{
-font-size: 13.89px;
-font-weight: 400;
-line-height: 18.2px;
-color: #05073C;
+.articles .author p {
+  font-size: 13.89px;
+  font-weight: 400;
+  line-height: 18.2px;
+  color: #05073c;
 }
 
-.articles .title p{
-font-size: 17.3px;
-font-weight: 500;
-line-height: 27px;
+.articles .title p {
+  font-size: 17.3px;
+  font-weight: 500;
+  line-height: 27px;
 }
 
 /* special offers */
-.partners{
+.partners {
   width: 85.9375vw;
   margin: 3rem auto;
 }
 
-.partners p{
+.partners p {
   text-align: center;
-font-size: 14.53px;
-font-weight: 400;
-line-height: 28.13px;
+  font-size: 14.53px;
+  font-weight: 400;
+  line-height: 28.13px;
 }
 
-.partners .brands{
+.partners .brands {
   width: 100%;
   height: 4rem;
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
   padding: 0rem 4rem;
 }
 
-.partners img{
+.partners img {
   height: 30px;
 }
 
-.suscribeSec{
-  width: 100vh;
+.suscribeSec {
   height: fit-content;
   position: relative;
 }
 
-.suscribeSec img{
+.suscribeSec img {
   width: 100vw;
   height: 100%;
   object-fit: fit;
 }
 
-.suscribeSec p{
-font-size: 39.38px;
-font-weight: 700;
-line-height: 60px;
-position: absolute;
-top: 5rem;
-left: 10rem;
+.suscribeSec p {
+  font-size: 39.38px;
+  font-weight: 700;
+  line-height: 60px;
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
 }
 
 /* footer section */
-.footer{
-  background-color: #05073C;
+.footer {
+  background-color: #05073c;
   color: white;
 }
 
-footer{
+footer {
   width: 85.9375vw;
   margin: 0px auto;
 }
 
-footer hr{
+footer hr {
   opacity: 15%;
 }
 
-footer .footer1{
+footer .footer1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -667,85 +695,237 @@ footer .footer1{
   height: 185.13px;
 }
 
-footer .footer p{
-font-size: 19.69px;
-font-weight: 500;
+footer .footer p {
+  font-size: 19.69px;
+  font-weight: 500;
 }
 
-footer .footer1 span{
-font-size: 16.2px;
-font-weight: 500;
+footer .footer1 span {
+  font-size: 16.2px;
+  font-weight: 500;
 }
 
-footer .footer2{
+footer .footer2 {
   height: 471px;
   display: flex;
   height: 471px;
   align-items: center;
 }
 
-footer .footer2 div{
+footer .footer2 div {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: fit-content;
-
 }
 
-footer .footer2 p{
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-color: #FFFFFF;
+footer .footer2 p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
 }
 
-footer .footer2 li{
+footer .footer2 li {
   list-style: none;
-font-size: 14.41px;
-font-weight: 400;
-line-height: 28.13px;
-color: #FFFFFF;
+  font-size: 14.41px;
+  font-weight: 400;
+  line-height: 28.13px;
+  color: #ffffff;
 }
 
-footer .mail{
+footer .mail {
   width: 300px;
-height: 60px;
-padding: 20px 21px;
-border-radius: 12px;
-background-color: #FFFFFF;
-border: 1px solid #E7E6E6;
-position: relative;
-color: #757575;
-display: flex;
-align-items: center;
+  height: 60px;
+  padding: 20px 21px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e7e6e6;
+  position: relative;
+  color: #757575;
+  display: flex;
+  align-items: center;
 }
 
-footer input{
+footer input {
   width: 100%;
   border: none;
   outline: none;
-color: #757575;
+  color: #757575;
 }
 
-footer button{
+footer button {
   position: absolute;
   right: 20px;
   border: none;
   background-color: transparent;
-  color: #05073C;
+  color: #05073c;
   font-family: Inter;
-font-size: 14.53px;
-font-weight: 400;
+  font-size: 14.53px;
+  font-weight: 400;
 }
 
-footer .footer3{
+footer .footer3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 69.13px;
 }
 
-footer .footer3 p{
-font-size: 14.53px;
-font-weight: 400;
+footer .footer3 p {
+  font-size: 14.53px;
+  font-weight: 400;
+}
+
+/* responsive elements */
+
+.mobileNav {
+  width: 85.9375vw;
+  margin: 0px auto;
+  display: none;
+}
+
+@media (max-width: 1110px) {
+  .navbar {
+  }
+
+  #navBox2 {
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+  }
+
+  .mobileNav li {
+    color: white;
+    line-height: 4rem;
+    list-style-type: none;
+  }
+
+  .mobileNav ul {
+    margin-left: 1rem;
+  }
+
+  .mobileNav button {
+    display: none;
+  }
+
+  .navBox2 {
+    display: none;
+  }
+
+  .navbar .navBtn2 {
+    display: block;
+  }
+
+  .navBox1 #menuBar {
+    display: inline;
+  }
+
+  .mobileNav {
+    display: none;
+    position: absolute;
+    z-index: 8;
+    top: 5rem;
+  }
+
+  .navbar #check:checked ~ .mobileNav {
+    display: block;
+  }
+
+  .destination .destinationImg {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .travel .tripCard {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .partners .brands {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    place-items: center;
+  }
+
+  /* hero section */
+  .hero #heading {
+    font-size: 29.53px;
+    font-weight: 600px;
+    margin: 0px;
+  }
+
+  .hero #subheading {
+    color: #05073c;
+    font-size: 10.65px;
+    font-weight: 400px;
+    line-height: 28.13px;
+  }
+
+  .hero .booking {
+    width: 539.98px;
+    height: 80px;
+  }
+
+  .hero .booking .circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 1px solid #717171;
+  }
+
+  .hero .booking .mbox p {
+    margin: 0px;
+    line-height: 1.2rem;
+  }
+
+  /* achievements section */
+
+  .achievements .box {
+    flex-direction: column;
+    gap: 50px;
+    height: 85%;
+  }
+
+  .achievements #box1 h2 {
+    font-size: 32.38px;
+    font-weight: 700;
+}
+
+  .achievements #mbox {
+    width: 190px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    padding: 2rem 0rem;
+  }
+
+  .achievements #mbox h3 {
+    font-size: 22.91px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    color: #eb662b;
+  }
+
+  .achievements #mbox p {
+    font-size: 14.77px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: center;
+    color: #05073c;
+  }
+
+  .achievements #box1 button{
+    width: 100%;
+  }
+
+  /* suscribe section */
+  .suscribeSec p {
+    font-size: 28.38px;
+    font-weight: 600;
+    left: 5rem;
+  }
 }

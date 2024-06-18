@@ -15,9 +15,16 @@
       <!-- Navigation bar -->
       <nav class="navbar">
         <div class="navBox1">
-          <img src="Assets/logo.svg" alt="" />
+          <div>
+            <label for="check">
+              <img id="menuBar" src="Assets/menuBar.svg" alt="">
+            </label>
+            <img src="Assets/logo.svg" alt="" />
+          </div>
           <input type="text" placeholder="Search destinations or activities" />
         </div>
+        
+        <input type="checkbox" name="" id="check">
 
         <div class="navBox2">
           <ul>
@@ -25,8 +32,22 @@
             <li>Activities</li>
             <li>USD</li>
             <li>Sign up</li>
-            <button>Log in</button>
+            <button class="navBtn1">Log in</button>
           </ul>
+        </div>
+        <button class="navBtn2">Log in</button>
+        
+        <!-- for responsive -->
+        <div class="mobileNav">
+          <div id="navBox2">
+            <ul>
+              <li>Destinations</li>
+              <li>Activities</li>
+              <li>USD</li>
+              <li>Sign up</li>
+              <button>Log in</button>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -488,8 +509,7 @@
        <!-- suscribe section -->
         <div class="suscribeSec">
           <img src="Assets/suscribeImg.svg" alt="">
-          <p>Subscribe To Our Mailing
-            List And Stay Up To Date.</p>
+          <p>Subscribe To Our Mailing List And <br> Stay Up To Date.</p>
         </div>
 
         <!-- footer section -->
