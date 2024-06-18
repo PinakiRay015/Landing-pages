@@ -921,4 +921,11 @@ footer .footer3 p {
   .achievements #box1 button{
     width: 100%;
   }
+
+  /* suscribe section */
+  .suscribeSec p {
+    font-size: 28.38px;
+    font-weight: 600;
+    left: 5rem;
+  }
 }
