@@ -6,7 +6,8 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background-color: black;
+  background-color: #141619;
+  overflow-x: hidden;
 }
 
 span{
@@ -313,7 +314,7 @@ line-height: 78px;
 text-align: center;
 }
 
-.feedback .subheading p{
+.feedback .subHeading{
 font-size: 20px;
 font-weight: 400;
 line-height: 28px;
@@ -396,4 +397,119 @@ text-align: left;
     top: 90px;
     left: 270px;
     z-index: -1;
+}
+
+.join span{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: underline;
+}
+
+
+
+/* contact section  */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 0px 120px;
+    padding-bottom: 70px;
+}
+
+.contact h3{
+font-size: 56px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.contact p{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.contact button{
+    background: linear-gradient(
+        110deg,
+        hsla(245, 53%, 58%, 1) 0%,
+        hsla(209, 73%, 64%, 1) 23%,
+        hsla(48, 34%, 51%, 1) 100%
+      );
+      padding: 17px 28.5px;
+      border-radius: 2px;
+      border: none;
+}
+
+.contact img{
+    position: absolute;
+    z-index: -1;
+}
+
+.contact #bg1 {
+    left: 0px;
+    top: 0px;
+}
+
+.contact #bg3 {
+    right: 55px;
+}
+
+.contact #bg2 {
+    right: 98px;
+    top: 29px;
+}
+
+.contact #bg4 {
+    right: 426px;
+    bottom: 11px;
+}
+
+
+/* footer section  */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 60px 120px;
+    border-top: 1px solid #ffffff48;
+}
+
+
+.footer .fHead{
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.footer li{
+font-size: 14px;
+font-weight: 400;
+line-height: 32px;
+color: #BCBCBC;
+list-style: none;
+}
+
+
+/* mini footer  */
+.miniFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+}
+
+.miniFooter p{
+font-size: 14px;
+font-weight: 400;
+line-height: 18.4px;
+text-align: left;
+color: #BCBCBC;
+padding-bottom: 30px;
 }
