@@ -35,6 +35,16 @@ span{
   color: #ffffff;
 }
 
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar #menu{
+    display: none;
+}
+
 .navbar .navbar-touch {
   display: flex;
   align-items: center;
@@ -51,6 +61,30 @@ span{
     hsla(209, 73%, 64%, 1) 23%,
     hsla(38, 54%, 61%, 1) 100%
   );
+}
+
+.mobileNav{
+   background-color: rgba(0, 0, 0, 0.645); 
+   line-height: 5rem;
+   position: absolute;
+   width: 100vw;
+   left: 0px;
+   padding: 0px 40px;
+   display: none;
+}
+
+#click:checked~.mobileNav{
+    top: 70px;
+    transition: 0.3s all ease-in-out;
+}
+
+#click:not(:checked)~.mobileNav{
+    top: -570px;
+    transition: 0.3s all ease-in-out;
+}
+
+#click{
+    display: none;
 }
 
 /* gradient bg  */
@@ -532,4 +566,55 @@ line-height: 18.4px;
 text-align: left;
 color: #BCBCBC;
 padding-bottom: 30px;
+}
+
+@media(max-width: 1294px){
+    .about .about-achievements{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width : 1113px){
+    .market #marketImg{
+        width: 30rem;
+    }
+
+    .partners h5{
+        font-size: 51px;
+        font-weight: 500;
+        line-height: 67px;
+        text-align: left;
+    }
+
+    .partners #mainBg{
+        width: 20rem;
+    }
+}
+
+@media(max-width : 1019px){
+    .join h3{
+        font-size: 43px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: left;
+    }
+
+    .join p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width : 915px){
+    .navbar .navbar-list{
+        display: none;
+    }
+
+    .navbar #menu{
+        display: block;
+    }
+
+    .mobileNav{
+        display: block;
+    }
 }
