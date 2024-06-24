@@ -20,7 +20,7 @@ span{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
+  padding: 10px 40px;
 }
 
 .navbar .navbar-list {
@@ -53,6 +53,14 @@ span{
   );
 }
 
+/* gradient bg  */
+#gradientBG{
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    right: -180px;
+}
+
 /* hero section  */
 .hero{
     display: flex;
@@ -63,10 +71,10 @@ span{
 }
 
 .hero .hero-heading h3{
-font-size: 76px;
-font-weight: 500;
-line-height: 100px;
-text-align: center;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 74px;
+    text-align: center;
 }
 
 .hero p{
@@ -98,7 +106,7 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 40px;
+    padding: 0px 120px;
     padding-top: 280px;
 }
 
@@ -119,7 +127,7 @@ color: #E5E5E5;
 
 .about .about-achievements{
     display: grid;
-    place-items: center;
+    margin: 0px auto;
     grid-template-columns: repeat(4, 1fr);
     padding: 40px 0px;
 }
@@ -192,7 +200,7 @@ text-align: center;
 }
 
 .market .market-heading p{
-font-size: 20px;
+font-size: 15px;
 font-weight: 400;
 line-height: 30px;
 text-align: center;
@@ -207,14 +215,14 @@ color: #E5E5E5;
 }
 
 .market .market-bio h5{
-font-size: 36px;
-font-weight: 400;
-line-height: 44px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31px;
 }
 
 .market .market-bio h6{
     font-family: Inter;
-font-size: 20px;
+font-size: 17px;
 font-weight: 700;
 line-height: 28px;
 padding: 20px 0px;
@@ -222,7 +230,7 @@ padding: 20px 0px;
 
 .market .market-bio p{
     font-family: Inter;
-font-size: 20px;
+font-size: 15px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
@@ -245,6 +253,11 @@ color: #E5E5E5;
     hsla(48, 34%, 51%, 1) 100%
   );
   border-image-slice: 1;
+}
+
+.market #marketImg{
+    width: 100%;
+    height: auto;
 }
 
 /* partner section  */
@@ -298,6 +311,11 @@ text-align: left;
     z-index: -1;
 }
 
+.partners #mainBg{
+    width: 100%;
+    height: auto;
+}
+
 /* feeback section  */
 .feedback{
     display: flex;
@@ -319,7 +337,7 @@ font-size: 20px;
 font-weight: 400;
 line-height: 28px;
 text-align: center;
-color: #FFFFFF;
+color: #E5E5E5;
 }
 
 .feedback .arrow{
@@ -328,10 +346,12 @@ color: #FFFFFF;
 }
 
 .feedback .feedback-bio{
-font-size: 26px;
+font-size: 20px;
 font-weight: 400;
-line-height: 44px;
+line-height: 35px;
 text-align: center;
+color: #E5E5E5;
+
 }
 
 .feedback .feedback-footer p{
@@ -467,8 +487,8 @@ color: #E5E5E5;
 }
 
 .contact #bg4 {
-    right: 426px;
-    bottom: 11px;
+    right: 500px;
+    bottom: 51px;
 }
 
 
