@@ -1,0 +1,399 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+span{
+    display: block;
+}
+
+/* navigation bar section  */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .navbar-list p {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar .navbar-touch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar #touchIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(38, 54%, 61%, 1) 100%
+  );
+}
+
+/* hero section  */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+
+.hero .hero-heading h3{
+font-size: 76px;
+font-weight: 500;
+line-height: 100px;
+text-align: center;
+}
+
+.hero p{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.hero .hero-button{
+    width: Hug (191.5px)px;
+height: Hug (58px)px;
+margin-top: 34px;
+padding: 17px 28px;
+border-radius: 2px;
+background: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(48, 34%, 51%, 1) 100%
+  );
+cursor: pointer;
+}
+
+/* about section  */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    padding-top: 280px;
+}
+
+.about h4{
+font-size: 56px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.about .about-bio p{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.about .about-achievements{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0px;
+}
+
+.about .achievement-box{
+    width: 264px;
+height: 180px;
+padding: 29px 27.3px;
+border: 1px solid;
+  border-image: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(48, 34%, 51%, 1) 100%
+  );
+  border-image-slice: 1;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.about .achievement-box:hover{
+    background: linear-gradient(
+        110deg,
+        hsla(245, 53%, 58%, 1) 0%,
+        hsla(209, 73%, 64%, 1) 23%,
+        hsla(48, 34%, 51%, 1) 100%
+      );
+      cursor: pointer;
+}
+
+.about .achievement-box h5{
+font-size: 28px;
+font-weight: 400;
+line-height: 68px;
+}
+
+.about .achievement-box p{
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+color: #E5E5E5;
+}
+
+.about #upperBox{
+    border-top: none;
+}
+
+.about #lowerBox{
+    border-bottom: none;
+}
+
+/* market section  */
+
+.market{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+.market .market-heading h3{
+font-size: 56px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.market .market-heading p{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.market .market-bio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.market .market-bio h5{
+font-size: 36px;
+font-weight: 400;
+line-height: 44px;
+}
+
+.market .market-bio h6{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 28px;
+padding: 20px 0px;
+}
+
+.market .market-bio p{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: #E5E5E5;
+}
+
+.market #arrow{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 30px;
+}
+
+.market .market-bio span p{
+    border-bottom: 1px solid;
+  border-image: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(48, 34%, 51%, 1) 100%
+  );
+  border-image-slice: 1;
+}
+
+/* partner section  */
+
+.partners{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 180px;
+}
+
+.partners h5{
+font-size: 60px;
+font-weight: 500;
+line-height: 78px;
+text-align: left;
+}
+
+.partners .miniImages{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+}
+
+.partners #icon2{
+    position: absolute;
+    left: 50px;
+}
+
+.partners #icon1{
+    width: 73px;
+    height: 83px;
+    position: absolute;
+    top: 112px;
+}
+
+.partners #icon3{
+    width: 73px;
+    height: 83px;
+    position: absolute;
+    top: 69px;
+    left: 123px;
+}
+
+.partners #partnerBg{
+    position: absolute;
+    left: -420px;
+    top: -218px;
+    z-index: -1;
+}
+
+/* feeback section  */
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feedback h3{
+font-size: 57px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.feedback .subheading p{
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.feedback .arrow{
+    display: flex;
+    gap: 10px;
+}
+
+.feedback .feedback-bio{
+font-size: 26px;
+font-weight: 400;
+line-height: 44px;
+text-align: center;
+}
+
+.feedback .feedback-footer p{
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+text-align: center;
+}
+
+.feedback .feedback-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.feedback .feedback-img p{
+font-size: 14px;
+font-weight: 300;
+line-height: 18.4px;
+text-align: center;
+}
+
+/* join section  */
+.join{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    padding: 240px 120px;
+}
+
+.join h3{
+font-size: 53px;
+font-weight: 500;
+line-height: 78px;
+text-align: left;
+}
+
+.join .join-para{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join p{
+font-size: 19px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+}
+
+.join #img1{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    z-index: -1;
+}
+
+.join #img2{
+    position: absolute;
+    top: 90px;
+    left: 270px;
+    z-index: -1;
+}
