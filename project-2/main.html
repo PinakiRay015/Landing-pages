@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gravity team</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
     </style>
@@ -40,7 +41,7 @@
     </div>
 
     <!-- hero section -->
-    <div class="hero">
+    <div data-aos="fade-in" data-aos-duration="1000" class="hero">
       <div class="hero-heading">
         <h3>Balancing <span></span>Crypto Markets</h3>
       </div>
@@ -55,7 +56,8 @@
     </div>
 
     <!-- about section -->
-    <div class="about">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+    class="about">
       <div><h4>About Gravity Team</h4></div>
       <div class="about-bio">
         <p>
@@ -104,7 +106,7 @@
     </div>
 
     <!-- market section  -->
-    <div class="market">
+    <div data-aos="zoom-in" class="market">
       <div class="market-heading">
         <h3>Crypto Market Making</h3>
         <p>
@@ -252,5 +254,10 @@
       <p>Terms of Use & Privacy Policy</p>
       <p>©2022 Gravity Team. All Rights Reserved</p>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
