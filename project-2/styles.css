@@ -1,0 +1,1062 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+body {
+    background-color: #141619;
+    overflow-x: hidden;
+    background-image: url(Assets/gradientBG.svg);
+    background-repeat: no-repeat;
+    background-position: -67rem 42rem;
+}
+
+span{
+    display: block;
+}
+
+/* navigation bar section  */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .navbar-list p {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar #menu{
+    display: none;
+}
+
+.navbar .navbar-touch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar #touchIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(38, 54%, 61%, 1) 100%
+  );
+}
+
+.mobileNav{
+   background-color: rgba(0, 0, 0, 0.645); 
+   line-height: 5rem;
+   position: absolute;
+   width: 100vw;
+   left: 0px;
+   padding: 0px 40px;
+   display: none;
+}
+
+#click:checked~.mobileNav{
+    top: 70px;
+    transition: 0.3s all ease-in-out;
+}
+
+#click:not(:checked)~.mobileNav{
+    top: -570px;
+    transition: 0.3s all ease-in-out;
+}
+
+#click{
+    display: none;
+}
+
+/* gradient bg  */
+
+/* hero section  */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    
+}
+
+.hero .hero-heading h3{
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 74px;
+    text-align: center;
+}
+
+.hero p{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.hero .hero-button{
+    width: Hug (191.5px)px;
+height: Hug (58px)px;
+margin-top: 34px;
+padding: 17px 28px;
+border-radius: 2px;
+background: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(48, 34%, 51%, 1) 100%
+  );
+cursor: pointer;
+}
+
+/* about section  */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 120px;
+    padding-top: 280px;
+    
+}
+
+.about h4{
+font-size: 56px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.about .about-bio p{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.about .about-achievements{
+    display: grid;
+    margin: 0px auto;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0px;
+}
+
+.about .achievement-box{
+    width: 264px;
+height: 180px;
+padding: 29px 27.3px;
+border: 1px solid;
+  border-image: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(48, 34%, 51%, 1) 100%
+  );
+  border-image-slice: 1;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.about .achievement-box:hover{
+    background: linear-gradient(
+        110deg,
+        hsla(245, 53%, 58%, 1) 0%,
+        hsla(209, 73%, 64%, 1) 23%,
+        hsla(48, 34%, 51%, 1) 100%
+      );
+      cursor: pointer;
+}
+
+.about .achievement-box h5{
+font-size: 28px;
+font-weight: 400;
+line-height: 68px;
+}
+
+.about .achievement-box p{
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+color: #E5E5E5;
+}
+
+.about #upperBox{
+    border-top: none;
+}
+
+.about #lowerBox{
+    border-bottom: none;
+}
+
+/* market section  */
+
+.market{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+.market .market-heading h3{
+font-size: 56px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.market .market-heading p{
+font-size: 15px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.market .market-bio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.market .market-bio h5{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.market .market-bio h6{
+    font-family: Inter;
+font-size: 17px;
+font-weight: 700;
+line-height: 28px;
+padding: 20px 0px;
+}
+
+.market .market-bio p{
+    font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: #E5E5E5;
+}
+
+.market #arrow{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 30px;
+}
+
+.market .market-bio span p{
+    border-bottom: 1px solid;
+  border-image: linear-gradient(
+    110deg,
+    hsla(245, 53%, 58%, 1) 0%,
+    hsla(209, 73%, 64%, 1) 23%,
+    hsla(48, 34%, 51%, 1) 100%
+  );
+  border-image-slice: 1;
+}
+
+#marketImg2{
+    width: 34rem;
+}
+
+/* partner section  */
+
+.partners{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 137px;
+    
+}
+
+.partners h5{
+font-size: 60px;
+font-weight: 500;
+line-height: 78px;
+text-align: left;
+}
+
+.partners .miniImages{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+}
+
+.partners #icon2{
+    position: absolute;
+    left: 50px;
+}
+
+.partners #icon1{
+    width: 73px;
+    height: 83px;
+    position: absolute;
+    top: 112px;
+}
+
+.partners #icon3{
+    width: 73px;
+    height: 83px;
+    position: absolute;
+    top: 69px;
+    left: 123px;
+}
+
+.partners #partnerBg{
+    position: absolute;
+    left: -420px;
+    top: -218px;
+    z-index: -1;
+}
+
+.partners #mainBg{
+    width: 100%;
+    height: auto;
+}
+
+/* feeback section  */
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.feedback h3{
+font-size: 57px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.feedback .subHeading{
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.feedback .arrow{
+    display: flex;
+    gap: 10px;
+}
+
+.feedback .feedback-bio{
+font-size: 20px;
+font-weight: 400;
+line-height: 35px;
+text-align: center;
+color: #E5E5E5;
+
+}
+
+.feedback .feedback-footer p{
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+text-align: center;
+}
+
+.feedback .feedback-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.feedback .feedback-img p{
+font-size: 14px;
+font-weight: 300;
+line-height: 18.4px;
+text-align: center;
+}
+
+/* join section  */
+.join{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    padding: 240px 120px;
+}
+
+.join h3{
+font-size: 53px;
+font-weight: 500;
+line-height: 78px;
+text-align: left;
+}
+
+.join .join-para{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join p{
+font-size: 19px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+}
+
+.join #img1{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    z-index: -1;
+    width: 95vw;
+}
+
+.join #img2{
+    position: absolute;
+    top: 90px;
+    left: 270px;
+    z-index: -1;
+    width: 60vw;
+}
+
+.join span{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: underline;
+}
+
+
+
+/* contact section  */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 0px 120px;
+    padding-bottom: 70px;
+}
+
+.contact h3{
+font-size: 56px;
+font-weight: 500;
+line-height: 78px;
+text-align: center;
+}
+
+.contact p{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #E5E5E5;
+}
+
+.contact button{
+    background: linear-gradient(
+        110deg,
+        hsla(245, 53%, 58%, 1) 0%,
+        hsla(209, 73%, 64%, 1) 23%,
+        hsla(48, 34%, 51%, 1) 100%
+      );
+      padding: 17px 28.5px;
+      border-radius: 2px;
+      border: none;
+}
+
+.contact img{
+    position: absolute;
+    z-index: -1;
+}
+
+.contact #bg1 {
+    left: 0px;
+    top: 0px;
+    width: 68vw;
+}
+
+.contact #bg3 {
+    right: 55px;
+    width: 41vw;
+}
+
+.contact #bg2 {
+    right: 98px;
+    top: 29px;
+    width: 49vw;
+}
+
+.contact #bg4 {
+    right: 500px;
+    bottom: 51px;
+}
+
+
+/* footer section  */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 60px 120px;
+    border-top: 1px solid #ffffff48;
+}
+
+
+.footer .fHead{
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.footer li{
+font-size: 14px;
+font-weight: 400;
+line-height: 32px;
+color: #BCBCBC;
+list-style: none;
+}
+
+
+/* mini footer  */
+.miniFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+}
+
+.miniFooter p{
+font-size: 14px;
+font-weight: 400;
+line-height: 18.4px;
+text-align: left;
+color: #BCBCBC;
+padding-bottom: 30px;
+}
+
+@media(max-width: 1294px){
+    .about .about-achievements{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width : 1113px){
+
+    img#marketImg1 {
+        width: 24rem;
+    }
+
+    .partners h5{
+        font-size: 51px;
+        font-weight: 500;
+        line-height: 67px;
+        text-align: left;
+    }
+
+    .partners #mainBg{
+        width: 20rem;
+    }
+}
+
+@media(max-width : 1019px){
+    .join h3{
+        font-size: 43px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: left;
+    }
+
+    .join p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width : 915px){
+    .navbar .navbar-list{
+        display: none;
+    }
+
+    .navbar #menu{
+        display: block;
+    }
+
+    .mobileNav{
+        display: block;
+    }
+}
+
+@media(max-width : 810px){
+    .market .market-bio{
+        flex-direction: column;
+    }
+
+    .hero .hero-heading h3{
+        font-size: 46px;
+    font-weight: 500;
+    line-height: 58px;
+    text-align: center;
+    }
+
+    .about h4{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .about .about-bio p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+    .about .achievement-box h5 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .about .achievement-box p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .about .achievement-box {
+        width: 190px;
+        height: 134px;
+    }
+
+    .market .market-heading h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .market .market-heading p{
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+            color: #E5E5E5;
+    }
+
+    .partners{
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px 0px;
+    }
+
+    .partners h5{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .partners #mainBg{
+        width: 16rem;
+    }
+
+    .partners #icon2{
+        width: 3rem;
+    }
+    
+    .partners #icon1{
+        width: 4rem;
+        height: 5rem;
+        top: 84px;
+    }
+
+    .partners #icon3{
+        width: 3rem;
+        top: 48px;
+        left: 103px;
+    }
+
+    .feedback h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .feedback .subHeading{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5; 
+    }
+
+    .feedback .feedback-bio{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+    .feedback .feedback-footer p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 8px;
+        text-align: center;
+    }
+
+    .join{
+        flex-direction: column;
+        align-items: center;
+        padding: 116px 0px;
+    }
+
+    .join span{
+        display: inline;
+    }
+
+    .join h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 90px;
+        text-align: center;
+    }
+
+    .join p{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #E5E5E5;
+    }
+
+    .join #para1 span , #para2 span{
+        display: block;
+    }
+
+    .contact h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .contact p{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+}
+
+@media(max-width : 732px)
+{
+    .about .about-achievements{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width : 620px){
+    .hero .hero-heading h3 {
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .hero  p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-top: 1rem;
+    }
+
+    .about{
+        padding-top: 127px;
+    }
+
+    .about h4{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .about .about-bio p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-heading h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .market .market-heading p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-bio h5 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .market .market-bio h6 {
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 14px;
+        padding: 20px 0px;
+    }
+
+    .market .market-bio p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    img#marketImg1 {
+        width: 16rem;
+    }
+
+    img#marketImg2 {
+        width: 23rem;
+    }
+    
+    .partners h5{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .partners #mainBg{
+        width: 11rem;
+    }
+
+    .feedback h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .feedback .subHeading{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .feedback .feedback-bio{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .join h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .join p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .contact h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .contact p{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .footer img{
+        width: 7rem;
+    }
+
+    .miniFooter{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .miniFooter p{
+        padding-bottom: 8px;
+    }
+
+    .navbar #logo{
+        width: 8rem;
+    }
+}
+
+@media(max-width : 500px){
+    .hero .hero-heading h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .hero  p{
+            font-size: 9px;
+            font-weight: 400;
+            line-height: 17px;
+            padding-top: 1rem;
+    }
+
+    .about h4{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .about .about-bio p{
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-heading h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .market .market-heading p{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-bio h5 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .market .market-bio h6 {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 11px;
+    }
+
+    .market .market-bio p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .partners h5{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .partners #mainBg{
+        width: 9rem;
+    }
+
+    .feedback h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .feedback .subHeading{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .feedback .feedback-bio{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .feedback .feedback-footer p{
+        font-size: 8px;
+    }
+
+    .feedback .feedback-footer img{
+        width: 4rem;
+    }
+
+    .join{
+        padding: 53px 0px;
+    }
+
+    .join h3{
+        font-size: 23px;
+        line-height: 45px;
+    }
+
+    .join p{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .join span{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .join img{
+        width: 12px;
+    }
+
+    .contact h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .contact p{
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 12px; 
+    }
+
+    .footer{
+        padding: 60px 37px;
+    }
+
+    .miniFooter{
+        padding: 0px 28px;
+    }
+
+}
