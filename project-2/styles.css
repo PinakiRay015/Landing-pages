@@ -6,8 +6,11 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background-color: #141619;
-  overflow-x: hidden;
+    background-color: #141619;
+    overflow-x: hidden;
+    background-image: url(Assets/gradientBG.svg);
+    background-repeat: no-repeat;
+    background-position: -67rem 42rem;
 }
 
 span{
@@ -88,12 +91,6 @@ span{
 }
 
 /* gradient bg  */
-#gradientBG{
-    position: absolute;
-    z-index: -1;
-    top: 70%;
-    right: -180px;
-}
 
 /* hero section  */
 .hero{
@@ -102,6 +99,7 @@ span{
     align-items: center;
     justify-content: center;
     padding: 0px 40px;
+    
 }
 
 .hero .hero-heading h3{
@@ -142,6 +140,7 @@ cursor: pointer;
     align-items: center;
     padding: 0px 120px;
     padding-top: 280px;
+    
 }
 
 .about h4{
@@ -289,9 +288,8 @@ color: #E5E5E5;
   border-image-slice: 1;
 }
 
-.market #marketImg{
-    width: 100%;
-    height: auto;
+#marketImg2{
+    width: 34rem;
 }
 
 /* partner section  */
@@ -301,7 +299,8 @@ color: #E5E5E5;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 0px 180px;
+    padding: 0px 137px;
+    
 }
 
 .partners h5{
@@ -357,6 +356,7 @@ text-align: left;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    
 }
 
 .feedback h3{
@@ -444,6 +444,7 @@ text-align: left;
     top: 100px;
     left: 0px;
     z-index: -1;
+    width: 95vw;
 }
 
 .join #img2{
@@ -451,6 +452,7 @@ text-align: left;
     top: 90px;
     left: 270px;
     z-index: -1;
+    width: 60vw;
 }
 
 .join span{
@@ -509,15 +511,18 @@ color: #E5E5E5;
 .contact #bg1 {
     left: 0px;
     top: 0px;
+    width: 68vw;
 }
 
 .contact #bg3 {
     right: 55px;
+    width: 41vw;
 }
 
 .contact #bg2 {
     right: 98px;
     top: 29px;
+    width: 49vw;
 }
 
 .contact #bg4 {
@@ -576,8 +581,9 @@ padding-bottom: 30px;
 }
 
 @media(max-width : 1113px){
-    .market #marketImg{
-        width: 30rem;
+
+    img#marketImg1 {
+        width: 24rem;
     }
 
     .partners h5{
@@ -617,4 +623,440 @@ padding-bottom: 30px;
     .mobileNav{
         display: block;
     }
+}
+
+@media(max-width : 810px){
+    .market .market-bio{
+        flex-direction: column;
+    }
+
+    .hero .hero-heading h3{
+        font-size: 46px;
+    font-weight: 500;
+    line-height: 58px;
+    text-align: center;
+    }
+
+    .about h4{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .about .about-bio p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+    .about .achievement-box h5 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .about .achievement-box p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .about .achievement-box {
+        width: 190px;
+        height: 134px;
+    }
+
+    .market .market-heading h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .market .market-heading p{
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+            color: #E5E5E5;
+    }
+
+    .partners{
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px 0px;
+    }
+
+    .partners h5{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .partners #mainBg{
+        width: 16rem;
+    }
+
+    .partners #icon2{
+        width: 3rem;
+    }
+    
+    .partners #icon1{
+        width: 4rem;
+        height: 5rem;
+        top: 84px;
+    }
+
+    .partners #icon3{
+        width: 3rem;
+        top: 48px;
+        left: 103px;
+    }
+
+    .feedback h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .feedback .subHeading{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5; 
+    }
+
+    .feedback .feedback-bio{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+    .feedback .feedback-footer p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 8px;
+        text-align: center;
+    }
+
+    .join{
+        flex-direction: column;
+        align-items: center;
+        padding: 116px 0px;
+    }
+
+    .join span{
+        display: inline;
+    }
+
+    .join h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 90px;
+        text-align: center;
+    }
+
+    .join p{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #E5E5E5;
+    }
+
+    .join #para1 span , #para2 span{
+        display: block;
+    }
+
+    .contact h3{
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .contact p{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #E5E5E5;
+    }
+
+}
+
+@media(max-width : 732px)
+{
+    .about .about-achievements{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width : 620px){
+    .hero .hero-heading h3 {
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .hero  p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-top: 1rem;
+    }
+
+    .about{
+        padding-top: 127px;
+    }
+
+    .about h4{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .about .about-bio p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-heading h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .market .market-heading p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-bio h5 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .market .market-bio h6 {
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 14px;
+        padding: 20px 0px;
+    }
+
+    .market .market-bio p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    img#marketImg1 {
+        width: 16rem;
+    }
+
+    img#marketImg2 {
+        width: 23rem;
+    }
+    
+    .partners h5{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .partners #mainBg{
+        width: 11rem;
+    }
+
+    .feedback h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .feedback .subHeading{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .feedback .feedback-bio{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .join h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .join p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .contact h3{
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .contact p{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .footer img{
+        width: 7rem;
+    }
+
+    .miniFooter{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .miniFooter p{
+        padding-bottom: 8px;
+    }
+
+    .navbar #logo{
+        width: 8rem;
+    }
+}
+
+@media(max-width : 500px){
+    .hero .hero-heading h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .hero  p{
+            font-size: 9px;
+            font-weight: 400;
+            line-height: 17px;
+            padding-top: 1rem;
+    }
+
+    .about h4{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .about .about-bio p{
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-heading h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .market .market-heading p{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .market .market-bio h5 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .market .market-bio h6 {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 11px;
+    }
+
+    .market .market-bio p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .partners h5{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .partners #mainBg{
+        width: 9rem;
+    }
+
+    .feedback h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .feedback .subHeading{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .feedback .feedback-bio{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .feedback .feedback-footer p{
+        font-size: 8px;
+    }
+
+    .feedback .feedback-footer img{
+        width: 4rem;
+    }
+
+    .join{
+        padding: 53px 0px;
+    }
+
+    .join h3{
+        font-size: 23px;
+        line-height: 45px;
+    }
+
+    .join p{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .join span{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .join img{
+        width: 12px;
+    }
+
+    .contact h3{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .contact p{
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 12px; 
+    }
+
+    .footer{
+        padding: 60px 37px;
+    }
+
+    .miniFooter{
+        padding: 0px 28px;
+    }
+
 }
