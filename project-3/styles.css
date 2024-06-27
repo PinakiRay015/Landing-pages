@@ -124,6 +124,7 @@ span {
   line-height: 21.78px;
   color: white;
   background-color: #4262ff;
+  cursor: pointer;
 }
 
 .hero .tagline{
@@ -151,3 +152,26 @@ line-height: 15px;
 text-align: left;
 margin: 0px;
 }
+
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.partner p{
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #05003899;
+opacity: 60%;
+}
+
+.partner .companies{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
