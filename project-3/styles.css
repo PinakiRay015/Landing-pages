@@ -1,0 +1,153 @@
+body {
+  font-family: "Inter";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: 0;
+}
+
+span {
+  display: block;
+}
+
+/* navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.navbar .leftNav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.leftNav p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #050038;
+  cursor: pointer;
+}
+
+.navbar .navbar-items {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .rightNav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar .rightNav p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #050038;
+}
+
+.navbar .rightNav .language {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navbar .navbar-btn button {
+  padding: 17px 22.77px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar #navBtn1 {
+  color: #050038;
+}
+
+.navbar #navBtn2 {
+  background-color: #4262ff;
+}
+
+/* hero section  */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #050038b8;
+  opacity: 72%;
+}
+
+.hero .hero-signUp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.hero input[type="email"] {
+  height: 48px;
+  border: 1px solid #9b99af;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.78px;
+  color: #5f5c80;
+  padding-left: 14px;
+}
+
+.hero .hero-signUp button {
+  height: 48px;
+  border: 1px solid #9b99af;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.78px;
+  color: white;
+  background-color: #4262ff;
+}
+
+.hero .tagline{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+color: #05003866;
+}
+
+.hero .rating{
+    display: flex;
+    background-color: #F5F5F7;
+    width: Hug (350px)px;
+height: Hug (60px)px;
+padding: 14px;
+border-radius: 8px;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.hero .rating p{
+font-size: 11px;
+font-weight: 400;
+line-height: 15px;
+text-align: left;
+margin: 0px;
+}
