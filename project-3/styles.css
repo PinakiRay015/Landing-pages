@@ -533,17 +533,19 @@ color: #4262FF;
 
 .feedback .feedback-card{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
   width: 100%;
-  position: relative;
-  margin-top: 5rem; 
+  margin-top: 5rem;
+  gap: 5rem;
 }
 
 .feedback .card{
-  width: 359.95px;
-  height: 350px;
   text-align: center;
+  width: 360px;
+  height: 350px;
+  position: relative;   
 }
 
 .feedback .card p{
@@ -619,6 +621,7 @@ margin-top: 40px;
   padding: 0px 30px;
   background-color: #050038;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer p{
@@ -760,6 +763,12 @@ opacity: 60%;
   }
 }
 
+@media (max-width : 1069px){
+  .navbar .navbar-items{
+    display: none;
+  }
+}
+
 @media (max-width : 900px){
   .hero{
     flex-direction: column;
@@ -824,6 +833,8 @@ opacity: 60%;
     width: 85vw;
   }
 
-
+.feedback .feedback-card{
+  flex-direction: column;
+}
   
 }
