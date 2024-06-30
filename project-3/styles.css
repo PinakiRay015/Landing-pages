@@ -603,3 +603,33 @@ line-height: 24px;
 text-align: center;
 margin-top: 40px;
 }
+
+.footer {
+  display: flex;
+  align-items: start;
+  padding: 0px 30px;
+  background-color: #050038;
+  justify-content: space-between;
+}
+
+.footer p{
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+color: #ffffff;
+}
+
+.footer li{
+  list-style: none;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: whitesmoke;
+opacity: 60%;
+}
+
+.footer a{
+  color: white;
+  line-height: 100px;
+}
