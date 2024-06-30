@@ -304,6 +304,7 @@ opacity: 60%;
 .banner img{
   margin: 0px auto;
   display: block;
+  width: 86vw;
 }
 
 
@@ -312,6 +313,10 @@ opacity: 60%;
   display: flex;
   flex-direction: column;
   padding: 40px 8vw;
+}
+
+.workBuild .work-build-img{
+  width: 54vw;
 }
 
 .workBuild h2{
@@ -367,6 +372,10 @@ opacity: 70%;
   display: flex;
   flex-direction: column;
   padding: 40px 8vw;
+}
+
+.teamBuild .team-build-img{
+  width: 54vw;
 }
 
 .teamBuild h2{
@@ -632,4 +641,189 @@ opacity: 60%;
 .footer a{
   color: white;
   line-height: 100px;
+}
+
+@media (max-width : 1210px){
+  .navbar{
+    background-color: crimson;
+  }
+
+  body{
+    border: 1px solid ;
+  }
+
+  .hero h2{
+    font-size: 43px;
+  }
+
+  .hero p{
+    font-size: 16px;
+  }
+
+  .hero .hero-bg{
+    width: 35rem;
+  }
+
+  .collaboration h2{
+    font-size: 43px;
+  }
+
+  .collaboration #tag{
+    top: -2%;
+  }
+
+  .collaboration-bio{
+    flex-wrap: wrap;
+  }
+
+  .work h2{
+    font-size: 43px;
+    line-height: 39px;
+  }
+
+  .work p{
+    font-size: 16px;
+  }
+
+  .work img{
+    width: 30rem;
+  }
+
+  .connection h2{
+    font-size: 43px;
+    line-height: 39px;
+  }
+
+  .connection p{
+    font-size: 16px;
+  }
+
+  .connection img{
+    width:30rem;
+  }
+
+  .workBuild h2{
+    font-size: 43px;
+    line-height: 39px;
+  }
+
+  .workBuild .workBuild-nav p{
+    font-size: 12px;
+  }
+
+  .workBuild .workBuild-main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workBuild .workBuild-main span{
+    display: inline;
+  }
+
+  .workBuild .work-build-img{
+    width: 86vw;
+  }
+
+  .teamBuild h2{
+    font-size: 43px;
+  }
+
+  .teamBuild .teamBuild-nav p{
+    font-size: 12px;
+  }
+
+  .teamBuild .teamBuild-main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamBuild .teamBuild-main span{
+    display: inline;
+  }
+
+  .teamBuild .teamBuild-main ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .teamBuild .teamBuild-main i{
+    color: green;
+  }
+
+  .teamBuild .team-build-img{
+    width: 86vw;
+  }
+
+  .teamBuild .teamBuild-footer{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width : 900px){
+  .hero{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero .hero-signUp{
+    flex-direction: row;
+  }
+
+  .hero input[type = "email"]{
+    width: 100%;
+  }
+
+  .hero .hero-signUp button{
+    width: 100%;
+  }
+
+  .hero span{
+    display: inline;
+  }
+
+  .hero .hero-bg{
+    width: 85vw;
+  }
+
+  .partner .companies{
+    justify-content: center;
+  }
+
+  .collaboration .collaboration-bio p{
+    margin: 0px;
+  }
+
+  .collaboration .collaboration-bio h5{
+    margin: 15px 0px;
+    text-align: left;
+  }
+
+  .work{
+    flex-direction: column;
+  }
+
+  .work span{
+    display: inline;
+  }
+
+  .work img{
+    width: 85vw;
+    margin-top: -72px;
+  }
+
+  .connection{
+    flex-direction: column;
+  }
+
+  .connection span{
+    display: inline;
+  }
+
+  .connection img{
+    width: 85vw;
+  }
+
+
+  
 }
