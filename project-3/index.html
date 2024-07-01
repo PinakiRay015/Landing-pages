@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>miro</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- navigation bar  -->
     <div class="navbar">
       <!-- left navbar section -->
       <div class="leftNav">
-        <div class="logo"><img src="assets/logo.svg" alt="" /></div>
+        <div class="logo">
+          <label for="check">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <img src="assets/logo.svg" alt="" />
+        </div>
+        <input type="checkbox" id="check">
         <div class="navbar-items">
           <p>Product</p>
           <p>Solutions</p>
           <p>Resources</p>
           <p>Resources</p>
           <p>Pricing</p>
+        </div>
+        <div class="mobileNav">
+          <li>Product</li>
+          <li>Solutions</li>
+          <li>Resources</li>
+          <li>Enterprise</li>
+          <li>Pricing</li>
+            <li> <i class="fa-solid fa-globe"></i> EN</li>
+          <li>Contact sales</li>
         </div>
       </div>
       <!-- right nav section  -->
@@ -35,6 +59,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- hero section  -->
     <div class="hero">
@@ -67,7 +92,7 @@
       </div>
 
       <!-- hero section banner image -->
-      <img src="assets/heroBg.svg" alt="" />
+      <img class="hero-bg" src="assets/heroBg.svg" alt="" />
     </div>
 
     <!-- partner section  -->
@@ -90,32 +115,29 @@
         <h2>Collaborate without <span></span> constraints</h2>
       </div>
       <div class="collaboration-bio">
-        <div>
+        <div class="collaboration-cards">
           <h5>Free forever</h5>
           <p>
-            Our free plan gives you unlimited team <span></span> members, 3
-            boards, and 300+ expert- <span></span> made templates. Signing up
-            with your <span></span> work email lets you bring in your team
-            <span></span> faster. See our <span></span>
+            Our free plan gives you unlimited team members, 3 boards, and 300+
+            expert- made templates. Signing up with your work email lets you
+            bring in your team faster. See our
             <a href="#">pricing plans</a> for more features.
           </p>
         </div>
-        <div>
+        <div class="collaboration-cards">
           <h5>Easy integrations</h5>
           <p>
-            Miro has 100+ powerful integrations <span></span> with tools you
-            already use like G <span></span> Suite, Slack, and Jira, so your
-            <span></span> workflow is seamless. View the full <span></span> list
-            in our <a href="#">Marketplace</a> .
+            Miro has 100+ powerful integrations with tools you already use like
+            G Suite, Slack, and Jira, so your workflow is seamless. View the
+            full list in our <a href="#">Marketplace</a> .
           </p>
         </div>
-        <div>
+        <div class="collaboration-cards">
           <h5>Security first</h5>
           <p>
-            We treat your data like you would — <span></span> with the utmost
-            care. We follow <span></span> industry-leading security standards
-            <span></span> and give you tools to protect
-            <span></span> intellectual property. Learn more <span></span> at our
+            We treat your data like you would — with the utmost care. We follow
+            industry-leading security standards and give you tools to protect
+            intellectual property. Learn more at our
             <a href="#">Trust Center</a> .
           </p>
         </div>
@@ -131,7 +153,8 @@
         <p>
           In the office, remote, or a mix of the two, with Miro,
           <span></span> your team can connect, collaborate, and co-create in
-          <span></span> one space no matter where you are. <br> <br>
+          <span></span> one space no matter where you are. <br />
+          <br />
           <a href="#">Learn more</a>
         </p>
       </div>
@@ -147,16 +170,17 @@
         <p>
           Whether you want to edit your Google Docs, resolve <span></span> Jira
           issues, or collaborate over Zoom, Miro has 100+
-          <span></span> integrations with tools you already use and love. <br><br>
+          <span></span> integrations with tools you already use and love.
+          <br /><br />
           <a href="#">Learn more</a>
         </p>
       </div>
     </div>
 
     <!-- banner section  -->
-     <div class="banner">
-       <img id="banner" src="assets/banner.jpg" alt="" />
-     </div>
+    <div class="banner">
+      <img id="banner" src="assets/banner.jpg" alt="" />
+    </div>
 
     <!-- build section for work  -->
 
@@ -182,7 +206,7 @@
           <a href="#">Learn more</a>
         </div>
 
-        <img class="" src="assets/workBuildBg.svg" alt="" />
+        <img class="work-build-img" src="assets/workBuildBg.svg" alt="" />
       </div>
     </div>
 
@@ -202,9 +226,9 @@
       <div class="teamBuild-main">
         <div class="teamBuild-about">
           <ul>
-            <li>Build low-fi wireframes</li>
-            <li>Involve stakeholders in the <span></span> design process</li>
-            <li>Run engaging design <span></span> workshops</li>
+            <li> <i class="fa-solid fa-check"></i> Build low-fi wireframes</li>
+            <li> <i class="fa-solid fa-check"></i> Involve stakeholders in the <span></span> design process</li>
+            <li> <i class="fa-solid fa-check"></i> Run engaging design <span></span> workshops</li>
           </ul>
           <a href="#">Learn more</a>
 
@@ -214,11 +238,11 @@
               <img src="assets/team1.svg" alt="" />
               <img src="assets/team2.svg" alt="" />
               <img src="assets/team3.svg" alt="" />
-              <img style="width: 2rem;" src="assets/team4.svg" alt="" />
+              <img style="width: 2rem" src="assets/team4.svg" alt="" />
             </div>
           </div>
         </div>
-        <img class="" src="assets/teamBuildBg.svg" alt="" />
+        <img class="team-build-img" src="assets/teamBuildBg.svg" alt="" />
       </div>
     </div>
 
@@ -256,141 +280,145 @@
         </div>
       </div>
     </div>
-      <!-- feedback section  -->
-      <div class="feedback">
-        <h2>Loved by the world's best teams</h2>
-        <button>See all customer stories →</button>
+    <!-- feedback section  -->
+    <div class="feedback">
+      <h2>Loved by the world's best teams</h2>
+      <button>See all customer stories →</button>
 
-        <!-- feedback cards section  -->
-        <div class="feedback-card">
-          <!-- card 1 -->
-          <div class="card">
-            <img src="assets/feedback1.svg" alt="" />
-            <p>
-              “When the pandemic hit, those of us who thrive on in-person
-              collaboration were worried that our creativity and productivity
-              would suffer. Miro was the perfect tool to help us with
-              collaboration, whiteboarding, and retrospectives while remote.”
-            </p>
-            <div class="feedback-footer">
-              <img src="assets/user1.svg" alt="">
-              <div class="feedeback-user">
-                <p class="userName">Roxanne Mustafa</p>
-                <p class="userData">Design Team Lead at VMware</p>
-              </div>
+      <!-- feedback cards section  -->
+      <div class="feedback-card">
+        <!-- card 1 -->
+        <div class="card">
+          <img src="assets/feedback1.svg" alt="" />
+          <p>
+            “When the pandemic hit, those of us who thrive on in-person
+            collaboration were worried that our creativity and productivity
+            would suffer. Miro was the perfect tool to help us with
+            collaboration, whiteboarding, and retrospectives while remote.”
+          </p>
+          <div class="feedback-footer">
+            <img src="assets/user1.svg" alt="" />
+            <div class="feedeback-user">
+              <p class="userName">Roxanne Mustafa</p>
+              <p class="userData">Design Team Lead at VMware</p>
             </div>
           </div>
+        </div>
 
-          <!-- card 2 -->
-          <div class="card">
-            <img src="assets/feedback2.svg" alt="" />
-            <p>
-              “Miro helps solve one of the major gaps in product design: how to manage tasks across product designers whose projects are in different tools.”
-            </p>
-            <div class="feedback-footer">
-              <img src="assets/user2.svg" alt="">
-              <div class="feedeback-user">
-                <p class="userName">Roxanne Mustafa</p>
-                <p class="userData">Design Team Lead at VMware</p>
-              </div>
+        <!-- card 2 -->
+        <div class="card">
+          <img src="assets/feedback2.svg" alt="" />
+          <p>
+            “Miro helps solve one of the major gaps in product design: how to
+            manage tasks across product designers whose projects are in
+            different tools.”
+          </p>
+          <div class="feedback-footer">
+            <img src="assets/user2.svg" alt="" />
+            <div class="feedeback-user">
+              <p class="userName">Roxanne Mustafa</p>
+              <p class="userData">Design Team Lead at VMware</p>
             </div>
           </div>
+        </div>
 
-          <!-- card 3 -->
-          <div class="card">
-            <img src="assets/feedback3.svg" alt="" />
-            <p>
-              “As we used Miro we moved from skepticism to belief to innovation, and now we have a tool that's at the core of what we do and will continue to extend into the future.”
-            </p>
-            <div class="feedback-footer">
-              <img src="assets/user3.svg" alt="">
-              <div class="feedeback-user">
-                <p class="userName">Roxanne Mustafa</p>
-                <p class="userData">Design Team Lead at VMware</p>
-              </div>
+        <!-- card 3 -->
+        <div class="card">
+          <img src="assets/feedback3.svg" alt="" />
+          <p>
+            “As we used Miro we moved from skepticism to belief to innovation,
+            and now we have a tool that's at the core of what we do and will
+            continue to extend into the future.”
+          </p>
+          <div class="feedback-footer">
+            <img src="assets/user3.svg" alt="" />
+            <div class="feedeback-user">
+              <p class="userName">Roxanne Mustafa</p>
+              <p class="userData">Design Team Lead at VMware</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- active users section   -->
-       <div class="user">
-        <div class="user-box">
-          <h2>Join 45M+ users today</h2>
-          <div class="user-tagline">
-            Start for free — upgrade anytime. <br>
-            Joining as an organization? Contact Sales
-          </div>
-          <button>Sign up free</button>
+    <!-- active users section   -->
+    <div class="user">
+      <div class="user-box">
+        <h2>Join 45M+ users today</h2>
+        <div class="user-tagline">
+          Start for free — upgrade anytime. <br />
+          Joining as an organization? Contact Sales
         </div>
-       </div>
+        <button>Sign up free</button>
+      </div>
+    </div>
 
-       <!-- footer section  -->
-       <div class="footer">
-        <!-- list 1 -->
-        <ul>
-          <p>Product</p>
-          <li>Online whiteboard</li>
-          <li>Apps & Integrations</li>
-          <li>Templates</li>
-          <li>Miroverse</li>
-          <li>Miro Developer Platform</li>
-          <li>Miro for Devices</li>
-          <li>Security & Compliance</li>
-          <li>Accessibility</li>
-          <li>Changelog</li>
-          <a href="#">View demo</a>
-        </ul>
-        <!-- list 2 -->
-        <ul>
-          <p>Solutions</p>
-          <li>Meetings and Workshops</li>
-          <li>Brainstorming & Ideation</li>
-          <li>Agile Workflows</li>
-          <li>Diagramming</li>
-          <li>Research & Design</li>
-          <li>Strategy & Planning</li>
-          <li>Mind Map</li>
-          <li>Concept Map</li>
-          <li>Online Sticky Notes</li>
-          <li>Flowchart</li>
-          <li>Wireframing</li>
-        </ul>
+    <!-- footer section  -->
+    <div class="footer">
+      <!-- list 1 -->
+      <ul>
+        <p>Product</p>
+        <li>Online whiteboard</li>
+        <li>Apps & Integrations</li>
+        <li>Templates</li>
+        <li>Miroverse</li>
+        <li>Miro Developer Platform</li>
+        <li>Miro for Devices</li>
+        <li>Security & Compliance</li>
+        <li>Accessibility</li>
+        <li>Changelog</li>
+        <a href="#">View demo</a>
+      </ul>
+      <!-- list 2 -->
+      <ul>
+        <p>Solutions</p>
+        <li>Meetings and Workshops</li>
+        <li>Brainstorming & Ideation</li>
+        <li>Agile Workflows</li>
+        <li>Diagramming</li>
+        <li>Research & Design</li>
+        <li>Strategy & Planning</li>
+        <li>Mind Map</li>
+        <li>Concept Map</li>
+        <li>Online Sticky Notes</li>
+        <li>Flowchart</li>
+        <li>Wireframing</li>
+      </ul>
 
-        <!-- list 3 -->
-         <ul>
-          <p>Resources</p>
-          <li>Miro Academy</li>
-          <li>Help Center</li>
-          <li>Blog</li>
-          <li>Status</li>
-          <li>Miro Community</li>
-          <li>Miro Professional Network</li>
-          <li>Miro Experts Directory</li>
-          <li>Miro Events</li>
-         </ul>
+      <!-- list 3 -->
+      <ul>
+        <p>Resources</p>
+        <li>Miro Academy</li>
+        <li>Help Center</li>
+        <li>Blog</li>
+        <li>Status</li>
+        <li>Miro Community</li>
+        <li>Miro Professional Network</li>
+        <li>Miro Experts Directory</li>
+        <li>Miro Events</li>
+      </ul>
 
-         <!-- list 4 -->
-        <ul>
-          <p>Company</p>
-          <li>About us</li>
-          <li>Careers 🚀</li>
-          <li>Miro in the News</li>
-          <li>Customer Stories</li>
-        </ul>
+      <!-- list 4 -->
+      <ul>
+        <p>Company</p>
+        <li>About us</li>
+        <li>Careers 🚀</li>
+        <li>Miro in the News</li>
+        <li>Customer Stories</li>
+      </ul>
 
-        <!-- list 5 -->
-        <ul>
-          <p>Plans and Pricing</p>
-          <li>Pricing</li>
-          <li>Business</li>
-          <li>Enterprise</li>
-          <li>Consultants</li>
-          <li>Education</li>
-          <li>Startups</li>
-          <li>NPOs</li>
-          <a href="#">Contact sales</a>
-        </ul>
-       </div>
+      <!-- list 5 -->
+      <ul>
+        <p>Plans and Pricing</p>
+        <li>Pricing</li>
+        <li>Business</li>
+        <li>Enterprise</li>
+        <li>Consultants</li>
+        <li>Education</li>
+        <li>Startups</li>
+        <li>NPOs</li>
+        <a href="#">Contact sales</a>
+      </ul>
+    </div>
   </body>
 </html>
