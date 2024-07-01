@@ -16,12 +16,19 @@ span {
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px;
+  position: relative;
 }
 
 .navbar .leftNav {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.navbar .leftNav i{
+  font-size: 25px;
+  padding-right: 0.4rem;
+  display: none;
 }
 
 .leftNav p {
@@ -79,6 +86,35 @@ span {
 
 .navbar #navBtn2 {
   background-color: #4262ff;
+}
+
+.mobileNav{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.858);
+  color: white;
+  left: 0px;
+  width: 100%;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+#check:checked ~ .mobileNav{
+  top: 50px;
+  transition: 0.2s ease-in-out;
+}
+
+#check:not(:checked) ~ .mobileNav{
+  top: -450px;
+  transition: 0.2s ease-in-out;
+}
+
+.mobileNav li{
+  list-style: none;
+  line-height: 60px;
+  padding: 0px 40px;
 }
 
 /* hero section  */
@@ -178,8 +214,9 @@ opacity: 60%;
 }
 
 .partner .companies{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
     width: 70%;
 }
 
@@ -329,8 +366,9 @@ color: #050038;
 
 .workBuild .workBuild-nav
 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
 }
 
 .workBuild .workBuild-nav p{
@@ -388,8 +426,8 @@ color: #050038;
 
 .teamBuild .teamBuild-nav
 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .teamBuild .teamBuild-nav p{
@@ -647,9 +685,6 @@ opacity: 60%;
 }
 
 @media (max-width : 1210px){
-  .navbar{
-    background-color: crimson;
-  }
 
   body{
     border: 1px solid ;
@@ -767,6 +802,19 @@ opacity: 60%;
   .navbar .navbar-items{
     display: none;
   }
+
+  .navbar .rightNav .language , .navbar-contact {
+    display: none;
+  }
+
+  .mobileNav{
+    display: block;
+  }
+
+  .navbar .leftNav i{
+    display: inline;
+  }
+
 }
 
 @media (max-width : 900px){
@@ -836,5 +884,39 @@ opacity: 60%;
 .feedback .feedback-card{
   flex-direction: column;
 }
+
+.partner .companies{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.workBuild .workBuild-nav{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.teamBuild .teamBuild-nav
+{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trust .trust-bio{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feedback .card{
+  width: 100%;
+  height: 16rem;
+}
   
+}
+
+@media (max-width: 586px){
+  .partner .companies{
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .trust .trust-bio{
+    grid-template-columns: 1fr;
+  }
 }
