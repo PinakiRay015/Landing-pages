@@ -920,3 +920,27 @@ opacity: 60%;
     grid-template-columns: 1fr;
   }
 }
+
+@media(max-width : 459px){
+  .navbar .logo img{
+    width: 4rem;
+  }
+
+  .partner .companies{
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .navbar .logo i{
+    font-size: 1.4rem;
+  }
+
+  .navbar .navbar-btn button{
+    padding: 11px 13px;
+    font-size: 12px;
+  }
+
+  .collaboration #tag{
+    width: 4.5rem;
+  }
+}
