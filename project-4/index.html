@@ -20,6 +20,7 @@
   <body class="bg-black">
     <div class="color1"></div>
     <div class="color2"></div>
+    <div class="color3"></div>
     <!-- navbar section  -->
 
     <div class="navbar">
@@ -54,7 +55,11 @@
       </div>
 
     </div>
+
+    <!-- bitcoin section  -->
     <div class="bitcoin">
+      <img id="element1" src="assets/element1.svg" alt="">
+      <img id="element2" src="assets/element2.svg" alt="">
       <div class="upper">
           <div class="cards"><img src="assets/card1.svg" alt="" /></div>
           <div class="cards"><img src="assets/card2.svg" alt="" /></div>
@@ -75,28 +80,28 @@
     <!-- crypto price section  -->
     <div class="crypto-price">
       <!-- crypto price card  -->
-      <div class="price-card">
+      <div id="card1" class="price-card">
         <h5>+112,256.60</h5>
         <span>Kcal</span>
         <p>Calories burned</p>
         <div class="crypto-icon"></div>
       </div>
 
-      <div class="price-card">
+      <div id="card2" class="price-card">
         <h5>+112,256.60</h5>
         <span>Kcal</span>
         <p>Calories burned</p>
         <div class="crypto-icon"></div>
       </div>
 
-      <div class="price-card">
+      <div id="card3" class="price-card">
         <h5>+112,256.60</h5>
         <span>Kcal</span>
         <p>Calories burned</p>
         <div class="crypto-icon"></div>
       </div>
 
-      <div class="price-card">
+      <div id="card4" class="price-card">
         <h5>+112,256.60</h5>
         <span>Kcal</span>
         <p>Calories burned</p>
@@ -107,19 +112,18 @@
     <!-- earn section  -->
     <div class="earn">
       <h2>Earn while walking</h2>
-      <div>
+      <div class="earn-steps">
         <div>
-          <img src="" alt="" />
+          <img src="assets/earn1.svg" alt="" />
           <p>Take a step</p>
         </div>
-
         <div>
-          <img src="" alt="" />
+          <img src="assets/earn2.svg" alt="" />
           <p>Earn</p>
         </div>
 
         <div>
-          <img src="" alt="" />
+          <img src="assets/earn3.svg" alt="" />
           <p>Complete the tasks</p>
         </div>
       </div>
@@ -137,18 +141,23 @@
         </p>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <div>
+      <div class="userCard">
+        <div class="upperCard">
+          <p>Better #216</p>
+          <img id="cover" src="assets/usercard1.svg" alt="" />
+          <img id="logo" src="assets/userAvatar.svg" alt="" />
+        </div>
+
+        <div class="lowerCard">
           <head>
             <p>Better #216</p>
             <img src="" alt="" />
           </head>
 
-          <div>
+          <div class="myform">
             <div>
               <label>Price</label><br />
-              <input type="text" />
+              <input type="text"/>
             </div>
 
             <div>
@@ -163,8 +172,8 @@
           </div>
 
           <div class="buttons">
-            <button>Bid</button>
-            <button>Buy</button>
+            <button id="btn1">Bid</button>
+            <button id="btn2">Buy</button>
           </div>
         </div>
       </div>
@@ -172,32 +181,46 @@
 
     <!-- trive section  -->
     <div class="trive">
-      <div>
-        <img src="" alt="" />
+      <div class="userCard">
+        <div class="upperCard">
+          <img src="assets/triveimg.svg" alt="" />
+          <header>
+            <p id="p1">Back</p>
+            <p id="p2">114</p>
+          </header>
+          <footer>
+            <p id="p3">Common</p>
+            <p id="p4">0.08 ETH </p>
+          </footer>
+        </div>
+
         <div class="twitter">
-          <head>
+          <header>
             <div class="user">
-              <img class="userimg" src="" alt="" />
+              <img class="userimg" src="assets/user.svg" alt="" />
               <div class="userdata">
                 <p id="userName">@betterstep</p>
                 <p id="followers">1800 Follower</p>
               </div>
             </div>
             <p class="follow">Follow</p>
-          </head>
+          </header>
 
           <p class="tweet">
-            Turn your steps into earnings and create your art-
-            <span></span> filled collection with our Shoe NFTs.
+            Turn your steps into earnings and create your art-filled collection with our Shoe NFTs.
           </p>
           <div class="buttons">
-            <button>Bid</button>
-            <button>Buy</button>
+            <button id="btn1">Bid</button>
+            <button id="btn2">Buy</button>
           </div>
         </div>
+
+        <img id="element1" src="assets/element1.svg" alt="">
+        <img id="element2" src="assets/element2.svg" alt="">
+
       </div>
 
-      <div>
+      <div class="bio">
         <h6>Walk, earn, and thrive</h6>
         <p>
           The earned rewards are distributed equally in $BTT <span></span> and
@@ -207,6 +230,7 @@
         </p>
         <button>Launch App</button>
       </div>
+
     </div>
 
     <!-- rarity section  -->
@@ -218,7 +242,7 @@
 
       <div class="rarity-table">
         <!-- rare tag  -->
-        <ul>
+        <ul class="lists">
           <p>Rarity</p>
           <li>Red</li>
           <li>Yellow</li>
@@ -229,14 +253,14 @@
         <!-- rare color  -->
         <ul>
           <p>Color</p>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
+          <li><img src="assets/red.svg" alt="" /></li>
+          <li><img src="assets/yellow.svg" alt="" /></li>
+          <li><img src="assets/blue.svg" alt="" /></li>
+          <li><img src="assets/green.svg" alt="" /></li>
         </ul>
 
         <!-- rare name  -->
-        <ul>
+        <ul class="lists">
           <p>Name</p>
           <li>Common</li>
           <li>Uncommon</li>
@@ -245,7 +269,7 @@
         </ul>
 
         <!-- supply -->
-        <ul>
+        <ul class="lists">
           <p>Supply</p>
           <li>1800</li>
           <li>1000</li>
@@ -253,6 +277,7 @@
           <li>60</li>
         </ul>
       </div>
+
     </div>
 
     <!-- team section  -->
