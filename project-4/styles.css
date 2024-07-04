@@ -9,7 +9,6 @@ body {
   background-color: black;
   color: white;
   overflow-x: hidden;
-  border: 1px solid;
 }
 
 span {
@@ -53,6 +52,40 @@ span {
   position: absolute;
   filter: blur(400px);
   top: 80rem;
+  left: 50%;
+  border: 1px solid white;
+  transform: translateX(-50%);
+}
+
+.color4 {
+  background: linear-gradient(
+    135deg,
+    hsla(273, 100%, 73%, 1) 20%,
+    hsla(187, 100%, 78%, 1) 100%
+  );
+  width: 400px;
+  height: 400px;
+  border-radius: 0%;
+  position: absolute;
+  filter: blur(300px);
+  top: 260rem;
+  left: 50%;
+  border: 1px solid white;
+  transform: translateX(-50%);
+}
+
+.color5 {
+  background: linear-gradient(
+    180deg,
+    hsla(339, 62%, 25%, 1) 0%,
+    hsla(25, 62%, 20%, 1) 100%
+  );
+  width: 500px;
+  height: 400px;
+  border-radius: 0%;
+  position: absolute;
+  filter: blur(260px);
+  top: 310rem;
   left: 50%;
   border: 1px solid white;
   transform: translateX(-50%);
@@ -457,215 +490,316 @@ span {
   background-color: #3580ef;
 }
 
-
-.trive{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 200px;
+.trive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 200px;
 }
 
-.trive .userCard{
-    width: 18vw;
-    height: fit-content;
-    object-fit: cover;
-    position: relative;
+.trive .userCard {
+  width: 18vw;
+  height: fit-content;
+  object-fit: cover;
+  position: relative;
 }
 
-.trive #element1 , #element2{
-    position: absolute;
-    width: 5rem;
-    z-index: -1;
+.trive #element1,
+#element2 {
+  position: absolute;
+  width: 5rem;
+  z-index: -1;
 }
 
-.trive #element1{
-    bottom: 20px;
-    left: -20px;
+.trive #element1 {
+  bottom: 20px;
+  left: -20px;
 }
 
-.trive #element2{
-    bottom: 60px;
-    right: -30px;
+.trive #element2 {
+  bottom: 60px;
+  right: -30px;
 }
 
-.trive .upperCard img{
-    width: 100%;
-    height: 100%;
+.trive .upperCard img {
+  width: 100%;
+  height: 100%;
 }
 
-.trive .upperCard{
-    position: relative;
-    flex-direction: column; 
+.trive .upperCard {
+  position: relative;
+  flex-direction: column;
   box-shadow: 4px 4px 380px 5px #d8f3dc;
-    border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
-    background-color: white;
-
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
+  background-color: white;
 }
 
-.trive .upperCard header , footer{
-    position: absolute;
+.trive .upperCard header,
+footer {
+  position: absolute;
 }
 
-.trive header{
-    top: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0px 15px;
+.trive header {
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 15px;
 }
 
-.trive footer{
-    bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 25px;
+.trive footer {
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 25px;
 }
 
-.trive .upperCard p{
-    border: 0.2px solid white;
-    border-radius: 30px;
-    padding: 3px 18px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.1px);
-    font-weight: 200;
-    cursor: pointer;
+.trive .upperCard p {
+  border: 0.2px solid white;
+  border-radius: 30px;
+  padding: 3px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  font-weight: 200;
+  cursor: pointer;
 }
 
-.trive #p4{
-    font-weight: 500;
+.trive #p4 {
+  font-weight: 500;
 }
 
-.trive .twitter{
-    border-bottom-left-radius: 33px;
-    border-bottom-right-radius: 33px;
-    height: 12rem;
-    color: black;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.1px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0px 15px;
-    margin-top: -8px;
+.trive .twitter {
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+  height: 12rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 15px;
+  margin-top: -8px;
 }
 
-.twitter header{
-    display: flex;
-    padding: 0px;
-    align-items: center;
+.twitter header {
+  display: flex;
+  padding: 0px;
+  align-items: center;
 }
 
-.trive .userimg{
-    filter: contrast(1);
-    width: 2rem;
+.trive .userimg {
+  filter: contrast(1);
+  width: 2rem;
 }
 
-.twitter .user{
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.twitter .user {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.twitter #userName{
-    font-size: 12px;
-    font-weight: 600;
+.twitter #userName {
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.twitter #followers{
-    font-size: 12px;
-    font-weight: 300;
+.twitter #followers {
+  font-size: 12px;
+  font-weight: 300;
 }
 
-.twitter .follow{
-    background-color: rgb(213, 213, 213);
-    text-align: center;
-    font-size: 15px;
-    padding: 3px 10px;
-    border-radius: 32px;
-    border: none;
-    box-shadow: 1px 1px 20px black;
+.twitter .follow {
+  background-color: rgb(213, 213, 213);
+  text-align: center;
+  font-size: 15px;
+  padding: 3px 10px;
+  border-radius: 32px;
+  border: none;
+  box-shadow: 1px 1px 20px black;
 }
 
-.twitter .tweet{
-    font-size: 12px;
-    font-weight: 500;
+.twitter .tweet {
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.twitter  .buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  
-  .twitter button {
-    width: 126px;
-    height: 39px;
-    border-radius: 24px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    margin-top: 20px;
-  }
-  
-  .twitter #btn1 {
-    background-color: rgba(0, 0, 0, 0.575);
-  }
-  
-  .twitter  #btn2 {
-    background-color: #3580ef;
-  }
+.twitter .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
-  .trive .bio h6{
-    font-size: 50px;
-    line-height: 90px;
-  }
+.twitter button {
+  width: 126px;
+  height: 39px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
 
-  .trive .bio p{
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.703);
-  }
+.twitter #btn1 {
+  background-color: rgba(0, 0, 0, 0.575);
+}
 
-  .trive .bio button{
-    background: transparent;
-    color: #5283FF;
-    border: none;
-    font-size: 20px;
-    margin-top: 20px;
-  }
+.twitter #btn2 {
+  background-color: #3580ef;
+}
 
-  .rarity{
-    text-align: center;
-    padding: 180px 0px;
-  }
+.trive .bio h6 {
+  font-size: 50px;
+  line-height: 90px;
+}
 
-  .rarity h2{
-    font-size: 72px;
-  }
+.trive .bio p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.703);
+}
 
-  .rarity p{
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.573);
-  }
+.trive .bio button {
+  background: transparent;
+  color: #5283ff;
+  border: none;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
-  .rarity .rarity-table{
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    padding: 0px 100px;
-  }
+.rarity {
+  text-align: center;
+  padding: 180px 0px;
+}
 
-  .rarity li{
-    list-style: none;
-  }
+.rarity h2 {
+  font-size: 72px;
+}
 
-  .rarity-table header{
-    display: flex;
-  }
+.rarity p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.503);
+}
 
-  .rarity-table .lists li{
-    line-height: 100px;
-  }
+.rarity .rarity-bg {
+  width: 22rem;
+}
+
+.rarity .rarity-table {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 60px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.526);
+  width: 70vw;
+  margin: 0px auto;
+  border-radius: 40px;
+  margin-top: 7rem;
+}
+
+.rarity li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.503);
+}
+
+.rarity-table header {
+  display: flex;
+}
+
+.rarity-table .lists li {
+  line-height: 100px;
+}
+
+.rarity-table .lists p {
+  color: white;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 72px;
+}
+
+.team .myteam {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.team .teamImg {
+  width: 12vw;
+  height: 30vh;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.team .teamProfile p {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bolder;
+}
+
+.team .teamProfile span {
+  font-size: 15px;
+  color: gray;
+}
+
+#team1,
+#team2,
+#team3 {
+  width: 12vw;
+  height: 30vh;
+  border-radius: 32px;
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq h2{
+  font-size: 72px;
+  margin-bottom: 4rem;
+}
+
+.faq .questions{
+  width: 74vw;
+  height: 12vh;
+  border-radius: 20px;
+  border: 1px solid;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  justify-content: center;
+}
+
+.faq header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq h6{
+  font-size: 22px;
+}
+
+.faq i{
+  font-size: 22px;
+}
+
+.faq p{
+  font-size: 12px;
+  width: 90%;
+  margin-top: 0.3rem;
+}
