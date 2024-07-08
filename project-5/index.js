@@ -1,4 +1,5 @@
 const form = document.querySelector('form');
+const date = document.querySelector('#date');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();  // Prevent form submission
@@ -22,3 +23,8 @@ form.addEventListener('submit', (e) => {
     document.getElementById('cgst').textContent = cgst.toFixed(2);
     document.getElementById('totalprice').textContent = finalTotal.toFixed(2);
 });
+
+const myDate = new Date();
+const year = myDate.getFullYear();
+
+date.innerHTML = year

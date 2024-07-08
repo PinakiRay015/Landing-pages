@@ -31,3 +31,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transform: rotate(80deg) scale(1.4) translate(-1rem, 3rem);
     transition: 0.3s all ease-in-out;
 }
+
+.discountBio .main{
+    font-family: "Sansita Swashed", system-ui;
+    line-height: 50px;
+}
