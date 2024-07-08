@@ -1,0 +1,33 @@
+*{
+    font-family: "Poppins", sans-serif;  
+}
+
+.navbar{
+    left: 50%;
+    transform: translateX(-50%);
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mainText{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main , h1{
+    font-family: "Sansita Swashed", system-ui;
+}
+
+.top-products img{
+    cursor: pointer;
+}
+
+.top-products img:hover{
+    transform: rotate(80deg) scale(1.4) translate(-1rem, 3rem);
+    transition: 0.3s all ease-in-out;
+}

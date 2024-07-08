@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #alert {
+            color: red;
+            display: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="alert">
+        Please provide a valid input
+    </div>
+    <input id="input" type="text">
+    <button id="button">Insert</button>
+    <ul id="list">
+    </ul>
+
+    <script>
+        input = document.querySelector('#input');
+        button = document.querySelector('#button');
+        list = document.querySelector('#list');
+        alertDiv = document.querySelector('#alert');
+
+        button.addEventListener('click', (e) => {
+            let myInput = input.value.trim();
+            
+            if(myInput === ""){
+                e.preventDefault();
+                alertDiv.style.display = 'block';
+                return;
+            }
+
+            alertDiv.style.display = 'none';
+
+            let newParagraph = document.createElement('p');
+            newParagraph.innerHTML = myInput;
+            list.appendChild(newParagraph);
+            input.value = '';
+        });
+
+        input.addEventListener('click', () => {
+            alertDiv.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
