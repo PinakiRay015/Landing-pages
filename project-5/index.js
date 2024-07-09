@@ -1,6 +1,19 @@
 const form = document.querySelector('form');
 const date = document.querySelector('#date');
 
+const toggleMenu = document.querySelector('#menu')
+const mobileMenu = document.querySelector('#mobileMenu');
+
+toggleMenu.addEventListener('click' , () =>{
+    if(mobileMenu.style.display == "block")
+    {
+        mobileMenu.style.display = "none"
+    }
+    else{
+        mobileMenu.style.display = "block"
+    }
+})
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();  // Prevent form submission
 

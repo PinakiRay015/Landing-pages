@@ -19,6 +19,10 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#mobileMenu{
+    display: none;
+}
+
 .hero-text{
     top: 70%;
     left: 50%;
@@ -41,4 +45,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .discountBio .main{
     font-family: "Sansita Swashed", system-ui;
     line-height: 50px;
+}
+
+@media (min-width : 768px){
+    #mobileMenu{
+        display: none;
+    }    
 }
