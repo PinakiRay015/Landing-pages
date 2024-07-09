@@ -17,19 +17,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <!-- hero section  -->
-    <div class="w-full">
+    <div class="relative w-full border border-blue-400">
       <!-- navbar  -->
-      <div
-        class="navbar absolute mt-2 h-20 w-full max-w-[85rem] px-2 flex items-center justify-between"
-      >
+      <div class="navbar absolute mt-2 h-20 w-full max-w-[85rem] px-2 flex items-center justify-between">
         <img class="w-16" src="assets/logo.svg" alt="" />
 
         <!-- navbar items  -->
 
-        <div class="navItems text-white flex gap-4">
+        <div class="navItems text-white hidden md:flex gap-4">
           <p>Home</p>
           <p>Blog</p>
           <p>Contact Us</p>
@@ -48,40 +49,39 @@
 
       <!-- banner section  -->
       <img
-        class="relative z-[-1] m-auto w-[100%]"
+        class="m-auto w-[100%]"
         src="assets/banner.svg"
         alt=""
       />
 
       <!-- hero text section -->
-      <div class="mainText absolute top-[55vh] w-[85rem] mx-auto">
-        <div class="text-amber-500 text-[22px]">Delicious Cafe</div>
-        <div class="main text-white text-[74px] leading-[70px]">
-          Sweet Treats, <br />
-          Perfect Eats
+
+      <div class="hero-text absolute px-6 w-full max-w-[85rem]">
+        <div class="text-lg font-semiBold text-amber-500">Delicious Cafe</div>
+        <div class="main text-[36px] md:text-[74px] leading-[2.5rem] md:leading-[5rem] text-white">
+          Sweet Treats, <span class="block"></span> Perfect Eats
         </div>
-        <div class="buttons">
-          <button class="bg-amber-900 rounded-lg text-white px-7 py-3">
-            Shop Now
-          </button>
-          <button class="text-amber-300 px-7 py-3 mt-12">Learn More</button>
+        <div class="buttons mt-8 md:mt-20">
+          <button class="bg-amber-900 text-white px-6 py-2 rounded-lg mr-4" >Shop Now</button>
+          <button class="text-amber-300 border border-amber-300 px-6 py-2 rounded-lg" >Learn More</button>
         </div>
       </div>
+
     </div>
 
     <!-- top products -->
     <div class="top-products w-full">
       <div class="w-full max-w-[85rem] mx-auto">
-        <h1 class="text-[74px] text-center my-[5rem]">Top Products</h1>
+        <h1 class="text-[36px] md:text-[74px] text-center my-[2rem] md:my-[5rem]">Top Products</h1>
 
         <!-- item cards   -->
-        <div class="itemCards grid grid-cols-3 gap-10 justify-items-center">
+        <div class="itemCards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 justify-items-center">
 
 
           <!-- item 1 -->
 
-          <div class="overflow-hidden w-[360px] h-[411px] border rounded-lg relative">
-            <img src="assets/item1.svg" alt="" />
+          <div class="overflow-hidden w-[90vw] md:w-[360px] h-[311px] md:h-[411px] border rounded-lg relative">
+            <img class="w-full" src="assets/item1.svg" alt="" />
 
             <!-- item description -->
 
@@ -108,8 +108,8 @@
 
           <!-- item 2 -->
 
-          <div class="overflow-hidden [360px] h-[411px] border rounded-lg relative">
-            <img src="assets/item2.png" alt="" />
+          <div class="overflow-hidden w-[90vw] md:w-[360px] h-[311px] md:h-[411px] border rounded-lg relative">
+            <img class="w-full" src="assets/item2.png" alt="" />
 
             <!-- item description -->
 
@@ -136,8 +136,8 @@
 
           <!-- item 3 -->
 
-          <div class="overflow-hidden [360px] h-[411px] border rounded-lg relative">
-            <img src="assets/item3.svg" alt="" />
+          <div class="overflow-hidden w-[90vw] md:w-[360px] h-[311px] md:h-[411px] border rounded-lg relative">
+            <img class="w-full" src="assets/item3.svg" alt="" />
 
             <!-- item description -->
 
@@ -164,8 +164,8 @@
 
           <!-- item 4 -->
 
-          <div class="overflow-hidden [360px] h-[411px] border rounded-lg relative">
-            <img src="assets/item4.svg" alt="" />
+          <div class="overflow-hidden w-[90vw] md:w-[360px] h-[311px] md:h-[411px] border rounded-lg relative">
+            <img class="w-full" src="assets/item4.svg" alt="" />
 
             <!-- item description -->
 
@@ -192,8 +192,8 @@
 
           <!-- item 5 -->
 
-          <div class="overflow-hidden [360px] h-[411px] border rounded-lg relative">
-            <img src="assets/item5.svg" alt="" />
+          <div class="overflow-hidden w-[90vw] md:w-[360px] h-[311px] md:h-[411px] border rounded-lg relative">
+            <img class="w-full" src="assets/item5.svg" alt="" />
 
             <!-- item description -->
 
@@ -220,8 +220,8 @@
 
           <!-- item 6 -->
 
-          <div class="overflow-hidden [360px] h-[411px] border rounded-lg relative">
-            <img src="assets/item6.svg" alt="" />
+          <div class="overflow-hidden w-[90vw] md:w-[360px] h-[311px] md:h-[411px] border rounded-lg relative">
+            <img class="w-full" src="assets/item6.svg" alt="" />
 
             <!-- item description -->
 
@@ -256,9 +256,9 @@
             <h1 class="text-[74px] text-center">Explore Specials</h1>
         </div>
 
-        <div class="w-full h-[90vh] bg-gradient-to-r from-gray-900 via-slate-800 to-teal-900 flex justify-center items-center">
+        <div class="w-full h-fit bg-gradient-to-r from-gray-900 via-slate-800 to-teal-900 flex justify-center items-center">
 
-            <form type="submit" class="w-1/4 h-fit">
+            <form type="submit" class="w-1/2 my-8 h-fit">
 
                 <div class="flex justify-between items-center my-4">
                     <label class="text-white text-lg font-normal">Chicken biryani</label>
@@ -336,44 +336,41 @@
         </div>
      </div>
 
-     <!-- footer tag -->
+     <!-- footer section -->
 
-     <div class="relative flex justify-center items-center footer w-full h-[633px] mt-24">
-
-        <!-- footer banner  -->
-     
-        <img class="w-full h-full object-cover" src="assets/footerbg.svg" alt="">
-
+     <div class="flex bg-black px-4 justify-center items-center footer w-full  md:h-[833px] mt-24">
+ 
+      
         <!-- footer data  -->
 
-        <div class="absolute w-full max-w-[85rem] mx-auto">
+        <div class="w-full max-w-[85rem] mx-auto">
 
             <header class="flex justify-between items-center mb-3">
-                <img class="w-36" src="assets/logo.svg" alt="">
+                <img class="w-22 md:w-36" src="assets/logo.svg" alt="">
                 <div class="flex items-center gap-6">
-                    <p class="text-[#E9BD8D] font-bold text-[24px]">Follow Us</p>
+                    <p class="text-[#E9BD8D] font-bold text-[18px] md:text-[24px]">Follow Us</p>
                     <div class="flex gap-2">
-                        <img class="w-8" src="assets/facebook.svg" alt="">
-                        <img class="w-8" src="assets/pinterest.svg" alt="">
-                        <img class="w-8" src="assets/whatsapp.svg" alt="">
-                        <img class="w-8" src="assets/instagram.svg" alt="">
+                        <img class="w-6 md:w-8" src="assets/facebook.svg" alt="">
+                        <img class="w-6 md:w-8" src="assets/pinterest.svg" alt="">
+                        <img class="w-6 md:w-8" src="assets/whatsapp.svg" alt="">
+                        <img class="w-6 md:w-8" src="assets/instagram.svg" alt="">
                     </div>
                 </div>
             </header>
 
             <hr>
 
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between flex-wrap items-center">
                 <ul class="text-white leading-8">
-                    <p class="text-[#E9BD8D] font-bold text-2xl mb-6 mt-3">About Us</p>
+                    <p class="text-[#E9BD8D] font-bold md:text-2xl text-lg mb-3 md:mb-6 mt-8 md:mt-3">About Us</p>
                     <li>(456) 789-12301</li>
                     <li>info@modrino.co.uk</li>
                     <li>South 13th street</li>
                     <li>New york America</li>
                 </ul>
 
-                <ul class="text-white leading-8 pr-64">
-                    <p class="text-[#E9BD8D] font-bold text-2xl mb-6 mt-3">Explore</p>
+                <ul class="text-white leading-8 md:pr-64">
+                    <p class="text-[#E9BD8D] font-bold md:text-2xl text-lg mb-3 md:mb-6 mt-8 md:mt-3">Explore</p>
                     <li>Home</li>
                     <li>Blog</li>
                     <li>Contact Us</li>
@@ -381,7 +378,7 @@
                 </ul>
 
                 <div>
-                    <p class="text-[#E9BD8D] font-bold text-2xl mb-6 mt-3">Recent News</p>
+                    <p class="text-[#E9BD8D] font-bold md:text-2xl text-lg mb-3 md:mb-6 mt-8 md:mt-3">Recent News</p>
 
                     <div class="flex items-center gap-2">
                         <img src="assets/footerimg1.svg" alt="">
@@ -412,6 +409,11 @@
 
         </div>
      </div>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
 
     <script src="index.js"></script>
   </body>
