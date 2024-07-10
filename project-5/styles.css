@@ -3,9 +3,6 @@
     box-sizing: border-box;
 }
 
-body{
-    border: 1px solid;
-}
 
 .navbar{
     left: 50%;
@@ -51,4 +48,49 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     #mobileMenu{
         display: none;
     }    
+}
+
+@media (max-width : 509px)
+{
+    .main{
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .hero-text .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .hero-text button{
+        margin-top: 15px;
+        font-size: 10px;
+        width: 100%;
+
+    }
+
+    .hero-tag{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .hero-text{
+        top: 100%;
+        left: 50%;
+        transform: translate(-50% , -100%);
+    }
+
+    .navbar .logo{
+        width: 42px;
+    }
+
+    .navbar i{
+        font-size: 22px;
+    }
+
+    .navbar{
+        height: fit-content;
+    }
 }
