@@ -1,6 +1,8 @@
 *{
-    font-family: "Poppins", sans-serif;  
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
+
 
 .navbar{
     left: 50%;
@@ -14,9 +16,14 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.mainText{
+#mobileMenu{
+    display: none;
+}
+
+.hero-text{
+    top: 70%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50% , -70%);
 }
 
 .main , h1{
@@ -35,4 +42,55 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .discountBio .main{
     font-family: "Sansita Swashed", system-ui;
     line-height: 50px;
+}
+
+@media (min-width : 768px){
+    #mobileMenu{
+        display: none;
+    }    
+}
+
+@media (max-width : 509px)
+{
+    .main{
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .hero-text .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .hero-text button{
+        margin-top: 15px;
+        font-size: 10px;
+        width: 100%;
+
+    }
+
+    .hero-tag{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .hero-text{
+        top: 100%;
+        left: 50%;
+        transform: translate(-50% , -100%);
+    }
+
+    .navbar .logo{
+        width: 42px;
+    }
+
+    .navbar i{
+        font-size: 22px;
+    }
+
+    .navbar{
+        height: fit-content;
+    }
 }
