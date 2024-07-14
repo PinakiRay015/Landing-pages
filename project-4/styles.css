@@ -70,7 +70,7 @@ span {
   border-radius: 0%;
   position: absolute;
   filter: blur(300px);
-  top: 260rem;
+  top: 200rem;
   left: 50%;
   border: 1px solid white;
   transform: translateX(-50%);
@@ -87,7 +87,7 @@ span {
   border-radius: 0%;
   position: absolute;
   filter: blur(260px);
-  top: 310rem;
+  top: 260rem;
   left: 50%;
   border: 1px solid white;
   transform: translateX(-50%);
@@ -112,7 +112,7 @@ span {
   margin-left: 9rem;
 }
 
-.navbar #menu{
+.navbar #menu {
   font-size: 2rem;
   display: none;
   color: crimson;
@@ -142,7 +142,7 @@ span {
   font-size: 20px;
 }
 
-.mobileNav{
+.mobileNav {
   position: absolute;
   top: 0%;
   width: 95vw;
@@ -157,25 +157,25 @@ span {
   z-index: 9;
 }
 
-.mobileNav #navBar-close{
+.mobileNav #navBar-close {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.mobileNav #closeMenu{
+.mobileNav #closeMenu {
   font-size: 3rem;
   color: crimson;
   cursor: pointer;
 }
 
-.mobileNav li{
+.mobileNav li {
   list-style: none;
   line-height: 170px;
   font-size: 20px;
 }
 
-.mobileNav button{
+.mobileNav button {
   border: none;
   width: 100%;
   font-size: 22px;
@@ -413,6 +413,7 @@ span {
 .earn h2 {
   font-size: 72px;
   font-weight: bold;
+  text-align: center;
 }
 
 .earn .earn-steps {
@@ -421,9 +422,6 @@ span {
   gap: 10rem;
   padding-top: 20px;
 }
-
-
-
 
 /* trive section  */
 
@@ -697,19 +695,19 @@ footer {
   border-radius: 32px;
 }
 
-.faq{
+.faq {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.faq h2{
+.faq h2 {
   font-size: 72px;
   margin-bottom: 4rem;
 }
 
-.faq .questions{
+.faq .questions {
   width: 74vw;
   height: 12vh;
   border-radius: 20px;
@@ -721,56 +719,53 @@ footer {
   justify-content: center;
 }
 
-.faq header{
+.faq header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.faq h6{
+.faq h6 {
   font-size: 22px;
 }
 
-.faq i{
+.faq i {
   font-size: 22px;
 }
 
-.faq p{
+.faq p {
   font-size: 12px;
   width: 90%;
   margin-top: 0.3rem;
 }
 
-@media (max-width:1037px){
-  
-  .trive{
+@media (max-width: 1037px) {
+  .trive {
     flex-direction: column;
+    padding: 120px 75px;
   }
 
-  .trive .userCard{
+  .trive .userCard {
     width: 66%;
     margin-top: 4rem;
   }
-
 }
 
-
-@media (max-width : 914px){
-  .crypto-price{
+@media (max-width: 914px) {
+  .crypto-price {
     grid-template-columns: 1fr;
   }
 
-  .crypto-price .price-card{
+  .crypto-price .price-card {
     width: 70vw;
   }
 
-  .navbar .navbar-items , #navbtn{
+  .navbar .navbar-items,
+  #navbtn {
     display: none;
   }
 
-
-  .navbar #menu{
+  .navbar #menu {
     display: block;
   }
-
 }
