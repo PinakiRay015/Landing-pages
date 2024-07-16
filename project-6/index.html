@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesNow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- navbar section -->
+
+    <div class="navbar bg-black text-white flex items-center justify-between px-8 py-5">
+        <div class="logo flex">
+            <h1 class="text-xl font-bold text-amber-500 cursor-pointer" >MoviesNow</h1>
+        <div class="navitems hidden lg:flex items-center gap-[1.5rem] pl-12">
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500" >Movies</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500" >Tv shows</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500" >Genres</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500" >Web series</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500" >Anime</p>
+        </div>
+    </div>
+        
+        <div class="accounts hidden lg:flex gap-8 items-center">
+            <input class="bg-transparent border-b border-gray-400 w-52 text-amber-200 outline-none" type="search" placeholder="Search">
+            <button class="px-4 py-1 rounded-lg bg-amber-500 text-black" >SUSCRIBE</button>
+            <button class="border border-amber-500 text-amber-500 px-4 py-1 rounded-lg " >Log in</button>
+        </div>
+        <i id="menu" class="fa-solid fa-bars-staggered text-amber-500 text-xl lg:hidden"></i>
+    </div>
+
+    <!-- mobile navbar menu section  -->
+    <div id="mobileNav" style="display: none;" class="px-12 bg-black">
+        <div class="mobileItems">
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500 leading-10" >Movies</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500 leading-10" >Tv shows</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500 leading-10" >Genres</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500 leading-10" >Web series</p>
+            <p class="cursor-pointer text-sm font-light text-amber-300 hover:text-amber-500 leading-10" >Anime</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
