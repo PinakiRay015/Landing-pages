@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: "Roboto", sans-serif;
     background-color: black;
+    border: 1px solid white;
 }
 
 .banner img{
@@ -12,11 +13,19 @@ body{
 }
 
 .showCards , .movieCards{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
-    place-items: center;
+    place-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
     margin: 3rem 0px;
     gap: 1rem;
+}
+
+.showCards .cards , .movieCards .cards{
+    width: 220px;
+    flex: 1 0 220px;
 }
 
 .showCards .about{

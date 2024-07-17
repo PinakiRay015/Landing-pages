@@ -16,7 +16,7 @@ const popularShows = async () => {
     const showList = data.results
       .map(
         (item) =>
-          `<div class="cards relative border border-amber-400 w-[220px] h-[350px] cursor-pointer" data-show-name="${item.original_name}">
+          `<div class="cards relative border border-amber-400 h-[350px] cursor-pointer" data-show-name="${item.original_name}">
           <img
           id="cardImg"
             src="https://image.tmdb.org/t/p/w500/${item.poster_path}"
@@ -73,7 +73,7 @@ const popularMovies = async () => {
     const movieList = data.results
       .map(
         (item) =>
-          `<div class="cards relative border border-amber-400 w-[220px] h-[350px] cursor-pointer" data-movie-name="${item.original_title}">
+          `<div class="cards relative border border-amber-400 h-[350px] cursor-pointer" data-movie-name="${item.original_title}">
           <img
           id="cardImg"
             src="https://image.tmdb.org/t/p/w500/${item.poster_path}"
