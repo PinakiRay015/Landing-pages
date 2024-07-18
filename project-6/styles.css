@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background-color: black;
+    background-color: #0d1b2a;
     border: 1px solid white;
 }
 
@@ -18,7 +18,6 @@ body{
     place-items: center; */
     display: flex;
     flex-wrap: wrap;
-    overflow-x: scroll;
     margin: 3rem 0px;
     gap: 1rem;
 }
@@ -26,6 +25,13 @@ body{
 .showCards .cards , .movieCards .cards{
     width: 220px;
     flex: 1 0 220px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.showCards img , .movieCards img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .showCards .about{

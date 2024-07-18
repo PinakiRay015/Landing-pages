@@ -115,7 +115,9 @@
       <img src="Assets/hotd.jpg" alt="" />
       <div class="absolute w-[75vw] h-fit bottom-10 left-8 text-white">
         <div class="font-light text-sm leading-10">Available Now</div>
-        <div class="text-4xl md:text-5xl font-bold leading-10">House of the Dragon</div>
+        <div class="text-4xl md:text-5xl font-bold leading-10">
+          House of the Dragon
+        </div>
         <div class="font-medium md:leading-10">
           Based on George R.R. Martin's Fire & Blood, House of the Dragon is set
           200 years before the events of Game of Thrones and tells the story of
@@ -134,25 +136,26 @@
 
     <!-- popular TV section  -->
     <div class="px-8 my-10">
-      <h2 class="font-semibold text-white text-2xl">
-        latest and trending in Tv shows
-      </h2>
-
-      <div class="showCards">
-
-
+      <div class="flex justify-between items-center">
+        <h2 class="font-semibold text-white text-2xl">
+          latest and trending in Tv shows
+        </h2>
+        <p id="toggleShow" class="text-amber-400 text-sm cursor-pointer">View All</p>
       </div>
+
+      <div class="showCards"></div>
     </div>
 
     <!-- popular Movie section  -->
     <div class="px-8 my-10">
-      <h2 class="font-semibold text-white text-2xl">
-        latest and trending in Movies
-      </h2>
-
-      <div class="movieCards">
-        
+      <div class="flex justify-between items-center">
+        <h2 class="font-semibold text-white text-2xl">
+          latest and trending in Movies
+        </h2>
+        <p id="toggleMovie" class="text-amber-400 text-sm cursor-pointer">View All</p>
       </div>
+
+      <div class="movieCards"></div>
     </div>
 
     <script src="app.js"></script>

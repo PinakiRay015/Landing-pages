@@ -5,18 +5,23 @@ const POPULAR = "popular";
 const API_KEY = "376a7b56bf7b28c1457c230c2ebbd63a";
 const showCards = document.querySelector(".showCards");
 const movieCards = document.querySelector(".movieCards");
+const toggleShow = document.querySelector('#toggleShow')
+const toggleMovie = document.querySelector('#toggleMovie')
 
-const popularShows = async () => {
+
+const popularShows = async (number) => {
   try {
     const response = await fetch(
       `${BASE_URL}/${TV}/${POPULAR}?api_key=${API_KEY}`
     );
     const data = await response.json();
     console.log("Popular Shows Data:", data); // Debugging log
-    const showList = data.results
+    const showList = data.results.slice(0,number)
       .map(
         (item) =>
-          `<div class="cards relative border border-amber-400 h-[350px] cursor-pointer" data-show-name="${item.original_name}">
+          `<div class="cards relative h-[350px] cursor-pointer" data-show-name="${
+            item.original_name
+          }">
           <img
           id="cardImg"
             src="https://image.tmdb.org/t/p/w500/${item.poster_path}"
@@ -50,30 +55,33 @@ const popularShows = async () => {
 
     showCards.innerHTML = showList;
 
-    showCards.addEventListener('click', (event) => {
-      const card = event.target.closest('.cards')
-      if(card){
-        const shoeName = card.getAttribute('data-show-name')
-        alert(shoeName)
-      }
-    });
+    // showCards.addEventListener("click", (event) => {
+    //   const card = event.target.closest(".cards");
+    //   if (card) {
+    //     const shoeName = card.getAttribute("data-show-name");
+    //     alert(shoeName);
+    //   }
+    // });
+
 
   } catch (error) {
     console.error("Error fetching popular shows:", error);
   }
 };
 
-const popularMovies = async () => {
+const popularMovies = async (number) => {
   try {
     const response = await fetch(
       `${BASE_URL}/${MOVIE}/${POPULAR}?api_key=${API_KEY}`
     );
     const data = await response.json();
     console.log("Popular Movies Data:", data); // Debugging log
-    const movieList = data.results
+    const movieList = data.results.slice(0,number)
       .map(
         (item) =>
-          `<div class="cards relative border border-amber-400 h-[350px] cursor-pointer" data-movie-name="${item.original_title}">
+          `<div class="cards relative h-[350px] cursor-pointer" data-movie-name="${
+            item.original_title
+          }">
           <img
           id="cardImg"
             src="https://image.tmdb.org/t/p/w500/${item.poster_path}"
@@ -107,21 +115,47 @@ const popularMovies = async () => {
 
     movieCards.innerHTML = movieList;
 
-    movieCards.addEventListener('click' , (event)=>{
-      const card = event.target.closest('.cards');
-      if(card){
+    movieCards.addEventListener("click", (event) => {
+      const card = event.target.closest(".cards");
+      if (card) {
         const movies = card.getAttribute("data-movie-name");
-        alert(movies)
+        alert(movies);
       }
-    })
 
+    });
   } catch (error) {
     console.error("Error fetching popular movies:", error);
   }
 };
 
-popularShows();
-popularMovies();
+let viewAllShow = false;
+toggleShow.addEventListener('click' , ()=>{
+  if(viewAllShow == false){
+    popularShows(17);
+    viewAllShow = true;
+    toggleShow.innerHTML = "View Less"
+  }else{
+    popularShows(6);
+    viewAllShow = false;
+    toggleShow.innerHTML = "View All"
+  }
+})
+
+let viewAllMovie = false
+toggleMovie.addEventListener('click' , ()=>{
+  if(viewAllMovie == false){
+    popularMovies(16);
+    viewAllMovie = true;
+    toggleMovie.innerHTML = "View Less"
+  }else{
+    popularMovies(6);
+    viewAllMovie = false;
+    toggleMovie.innerHTML = "view All"
+  }
+})
+popularShows(6);
+
+popularMovies(6);
 
 
 const menu = document.querySelector("#menu");
