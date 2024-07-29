@@ -13,7 +13,49 @@ const toggleUpcoming = document.querySelector("#toggleUpcoming");
 const toggleRecentAired = document.querySelector("#toggleRecentAired");
 const UpcomingCards = document.querySelector(".UpcomingCards");
 const airingToday = document.querySelector(".airingToday");
-const year = document.querySelector('#year')
+const year = document.querySelector("#year");
+const banner = document.querySelector('.banner-container');
+
+//banner section
+
+const myBanner = async () => {
+  try {
+    const response = await fetch(
+      `${BASE_URL}/movie/top_rated?api_key=${API_KEY}`
+    );
+    const data = await response.json();
+    const bannerList = data.results.slice(0,1).map((item) =>
+      `<div class="banner min-w-[100%] relative h-[32vh] sm:h-[40vh] md:h-[50vh] lg:h-[90vh]">
+          <img class="img-cover min-w-[100%]" src="https://image.tmdb.org/t/p/w500/${item.poster_path}" alt="" />
+          <div class="absolute w-[75vw] h-fit bottom-2 sm:bottom-10 left-8 text-white">
+            <div class="font-light text-sm md:leading-10">Available Now</div>
+            <div class="text-xl sm:text-2xl md:text-5xl font-bold sm:leading-10">
+              ${item.title || item.name}
+            </div>
+            <div class="font-medium text-[10px] sm:text-[12px] md:leading-10">
+              ${item.overview}
+            </div>
+            <div>
+              <button class="bg-amber-500 text-black text-xs md:text-md p-1 md:px-2 md:py-2 mx-1 mt-2">
+                WATCH THE TRAILER
+              </button>
+              <button class="bg-amber-500 text-black text-xs md:text-md p-1 md:px-2 md:py-2 mx-1 mt-2">
+                FIND OUT MORE
+              </button>
+            </div>
+          </div>
+        </div>`
+    ).join("");
+
+    banner.innerHTML = bannerList;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
+
+
 
 // popular Shows section
 
@@ -23,7 +65,6 @@ const popularShows = async (number) => {
       `${BASE_URL}/${TV}/${POPULAR}?api_key=${API_KEY}`
     );
     const data = await response.json();
-    console.log("Popular Shows Data:", data); // Debugging log
     const showList = data.results
       .slice(0, number)
       .map(
@@ -61,14 +102,6 @@ const popularShows = async (number) => {
       .join("");
 
     showCards.innerHTML = showList;
-
-    // showCards.addEventListener("click", (event) => {
-    //   const card = event.target.closest(".cards");
-    //   if (card) {
-    //     const shoeName = card.getAttribute("data-show-name");
-    //     alert(shoeName);
-    //   }
-    // });
   } catch (error) {
     console.error("Error fetching popular shows:", error);
   }
@@ -120,14 +153,6 @@ const recentAired = async (number) => {
       .join("");
 
     airingToday.innerHTML = showList;
-
-    // showCards.addEventListener("click", (event) => {
-    //   const card = event.target.closest(".cards");
-    //   if (card) {
-    //     const shoeName = card.getAttribute("data-show-name");
-    //     alert(shoeName);
-    //   }
-    // });
   } catch (error) {
     console.error("Error fetching popular shows:", error);
   }
@@ -294,6 +319,8 @@ toggleRecentAired.addEventListener("click", () => {
   }
 });
 
+myBanner();
+
 popularShows(6);
 
 popularMovies(6);
@@ -304,10 +331,27 @@ recentAired(6);
 
 const menu = document.querySelector("#menu");
 const mobileNav = document.querySelector("#mobileNav");
+
 menu.addEventListener("click", () => {
   mobileNav.style.display =
     mobileNav.style.display == "none" ? "block" : "none";
 });
+
+nextBtn.addEventListener('click' , ()=>{
+  console.log(scrollAmount);
+  banner.scroll({
+    left: banner.scrollLeft + scrollAmount,
+    behavior : 'smooth'
+  })
+})
+
+prevBtn.addEventListener('click' , ()=>{
+  banner.scroll({
+    left: banner.scrollLeft - scrollAmount,
+    behavior : 'smooth'
+  })
+})
+
 
 let myYear = new Date();
 let CurrentYear = myYear.getFullYear();
